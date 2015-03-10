@@ -1,6 +1,5 @@
 ############### set up working environment and load packages ###################
 library(lubridate)
-library(chron)
 library(rvest)
 library(dplyr)
 library(magrittr)
@@ -52,15 +51,23 @@ names(oyster) %<>% tolower
 names(locations) %<>% tolower
 
 # Oyster Data ------------------------------------------------------------------
-oyster$date <- dmy(oyster$date)
+oyster %<>%
+  mutate(date.clean = dmy(oyster$date),
+         start.time.clean = ifelse(oyster$start.time == "",
+                                          "00:00", oyster$start.time) %>%
+                                    paste0(":00"),
+         end.time.clean = ifelse(oyster$end.time == "",
+                                        "00:00",
+                                        oyster$end.time) %>%
+                                  paste0(":00"))
+         oyster$start.datetime <- paste(oyster$date, oyster$start.time.clean, sep = " ") %>% dmy_hms()
+oyster$end.datetime <- paste(oyster$date, oyster$end.time.clean, sep = " ") %>% dmy_hms()
+oyster$journey.time <- ((oyster$end.datetime - oyster$start.datetime) / 60) %>% minutes()
 
-oyster$start.time.clean <- ifelse(oyster$start.time == "", "00:00", oyster$start.time)
-oyster$start.time.clean <- chron(times = paste0(oyster$start.time.clean,":00"))
 
-oyster$end.time.clean <- ifelse(oyster$end.time == "", "00:00", oyster$end.time)
-oyster$end.time.clean <- chron(times = paste0(oyster$end.time.clean,":00"))
 
-oyster$journey.time <- chron(times = oyster$end.time.clean - oyster$start.time.clean)
+
+
 
 
 # Rail stations data -----------------------------------------------------------
