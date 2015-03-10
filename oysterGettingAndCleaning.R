@@ -46,23 +46,26 @@ oyster <-
 
 
 ############################# Clean the data ##################################
-names(railStations) %<>% tolower
-names(oyster) %<>% tolower
-names(locations) %<>% tolower
+# set all names to lowercase because I'm lazy
+  names(railStations) %<>% tolower
+  names(oyster) %<>% tolower
+  names(locations) %<>% tolower
 
 # Oyster Data ------------------------------------------------------------------
+badRecords <- "touch-in|Topped-up|touch-out|Season ticket|Bus journey|Topped up|Entered and exited"
+
 oyster %<>%
-  mutate(date.clean = dmy(oyster$date),
-         start.time.clean = ifelse(oyster$start.time == "",
-                                          "00:00", oyster$start.time) %>%
+  .[-grep(badRecords, .$journey.action),] %>%
+  mutate(date.clean = dmy(date),
+         start.time.clean = ifelse(start.time == "", "00:00", start.time) %>%
                                     paste0(":00"),
-         end.time.clean = ifelse(oyster$end.time == "",
-                                        "00:00",
-                                        oyster$end.time) %>%
-                                  paste0(":00"))
-         oyster$start.datetime <- paste(oyster$date, oyster$start.time.clean, sep = " ") %>% dmy_hms()
-oyster$end.datetime <- paste(oyster$date, oyster$end.time.clean, sep = " ") %>% dmy_hms()
-oyster$journey.time <- ((oyster$end.datetime - oyster$start.datetime) / 60) %>% minutes()
+         end.time.clean = ifelse(end.time == "", "00:00", end.time) %>%
+                                  paste0(":00"),
+         start.datetime = paste(date, start.time.clean, sep = " ") %>% dmy_hms(),
+         end.datetime = paste(date, end.time.clean, sep = " ") %>% dmy_hms(),
+         journey.time = ((end.datetime - start.datetime)) %>% as.duration(),
+         start.day = wday(start.datetime, label = T),
+         end.day = wday(end.datetime, label = T))
 
 
 
