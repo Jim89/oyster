@@ -53,7 +53,7 @@ oyster <-
 
 # Oyster Data ------------------------------------------------------------------
 # find records where something went awry in the journey
-  badRecords <- "touch-in|Topped-up|touch-out|Season ticket|Bus journey|Topped up|Entered and exited"
+  badRecords <- "touch-in|Topped-up|touch-out|Season ticket|Bus journey|Topped up|Entered and exited|Unspecified location"
 
 # create clearner times, dates and datetimes
   oyster %<>%
@@ -70,10 +70,10 @@ oyster <-
 
 # set the end date/times to be the next day (i.e. after midnight)
 # dates
-  oyster[afterMidnight, 11]  <-  oyster[afterMidnight, 11] + days(1)
+  oyster[afterMidnight, 13]  <-  oyster[afterMidnight, 13] + days(1)
 
 # datetimes
-  oyster[afterMidnight, 13]  <-  oyster[afterMidnight, 13] + days(1)
+  oyster[afterMidnight, 15]  <-  oyster[afterMidnight, 15] + days(1)
 
 # create journey times and days of the week
   oyster %<>%
@@ -81,20 +81,35 @@ oyster <-
          start.day = wday(start.datetime, label = T)
         )
 
+# split up the journey in to "to" and "from"
+  toFrom <- str_split(oyster$journey.action, " to")
 
+# get the "from" station
+  from <- sapply(1:length(toFrom), function(x) toFrom[[x]][1]) %>%
+          gsub("\\[.*\\]|\\(.*\\)","", .) %>% str_trim()
 
+# get the "to" station
+  to <- sapply(1:length(toFrom), function(x) toFrom[[x]][2]) %>%
+          gsub("\\[.*\\]|\\(.*\\)","", .) %>% str_trim()
 
+# put back in to data
+  oyster %<>%
+    mutate(from = from,
+           to = to
+           )
 
+# clear out the junk
+  rm(list = c("afterMidnight", "badRecords", "from", "to", "toFrom"))
+  gc()
 
 # Rail stations data -----------------------------------------------------------
 # extract lat/long
-coordsRaw  <-  railStations$coordinates %>% str_split("/")
+  coordsRaw  <-  railStations$coordinates %>% str_split("/")
 
 # clean up
-coordsClean <- sapply(1:length(coordsRaw), function(x) coordsRaw[[x]][[3]]) %>%
-  str_trim() %>%
-  str_split(";")
-
+  coordsClean <- sapply(1:length(coordsRaw), function(x) coordsRaw[[x]][[3]]) %>%
+    str_trim() %>%
+    str_split(";")
 
 lattitude <- sapply(1:length(coordsClean), function(x) coordsClean[[x]][1]) %>%
   str_trim() %>%
