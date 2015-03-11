@@ -46,27 +46,40 @@ oyster <-
 
 
 ############################# Clean the data ##################################
-# set all names to lowercase because I'm lazy
+
   names(railStations) %<>% tolower
   names(oyster) %<>% tolower
   names(locations) %<>% tolower
 
 # Oyster Data ------------------------------------------------------------------
-badRecords <- "touch-in|Topped-up|touch-out|Season ticket|Bus journey|Topped up|Entered and exited"
+# find records where something went awry in the journey
+  badRecords <- "touch-in|Topped-up|touch-out|Season ticket|Bus journey|Topped up|Entered and exited"
 
-oyster %<>%
+# create clearner times, dates and datetimes
+  oyster %<>%
   .[-grep(badRecords, .$journey.action),] %>%
-  mutate(date.clean = dmy(date),
-         start.time.clean = ifelse(start.time == "", "00:00", start.time) %>%
-                                    paste0(":00"),
-         end.time.clean = ifelse(end.time == "", "00:00", end.time) %>%
-                                  paste0(":00"),
+  mutate(start.time.clean = start.time %>% paste0(":00"),
+         end.time.clean = end.time %>% paste0(":00"),
+         date.clean = dmy(date),
          start.datetime = paste(date, start.time.clean, sep = " ") %>% dmy_hms(),
-         end.datetime = paste(date, end.time.clean, sep = " ") %>% dmy_hms(),
-         journey.time = ((end.datetime - start.datetime)) %>% as.duration(),
-         start.day = wday(start.datetime, label = T),
-         end.day = wday(end.datetime, label = T))
+         end.datetime = paste(date, end.time.clean, sep = " ") %>% dmy_hms()
+         )
 
+# find records where I touched out after mighnight
+  afterMidnight <- substring(oyster$end.time,1,2) %in% c("00","01")
+
+# set the end date/times to be the next day (i.e. after midnight)
+# dates
+  oyster[afterMidnight, 11]  <-  oyster[afterMidnight, 11] + days(1)
+
+# datetimes
+  oyster[afterMidnight, 13]  <-  oyster[afterMidnight, 13] + days(1)
+
+# create journey times and days of the week
+  oyster %<>%
+  mutate(journey.time = difftime(end.datetime, start.datetime, units = "mins"),
+         start.day = wday(start.datetime, label = T)
+        )
 
 
 
