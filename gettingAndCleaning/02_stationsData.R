@@ -66,24 +66,24 @@ ExtractTitle <- function(url) {
   geos <- sapply(1:length(links), function(x) try(ExtractGeo(links[x]), silent = T))
 
 # clean up the coordinates
-  geosClean <- sapply(1:length(geos), function(x) geos[[x]][1])
+  geos.clean <- sapply(1:length(geos), function(x) geos[[x]][1])
 
 # loop over the links and extract the station name from the page
   titles <- sapply(1:length(links), function(x) try(ExtractTitle(links[x]), silent = T))
 
 # clean up the station names
-  titleClean <- sapply(1:length(titles), function(x) titles[[x]][1])
+  title.clean <- sapply(1:length(titles), function(x) titles[[x]][1])
 
 # combine in to one data frame
-  locations <- cbind(geosClean, titleClean) %>% data.frame()
+  locations <- cbind(geos.clean, title.clean) %>% data.frame()
 
 # clean up
-  rm(list = c("files", "links", "geos","geosClean", "titles", "titleClean"))
+  rm(list = c("links", "geos","geos.clean", "titles", "title.clean"))
   gc()
 
 ############################# Clean the data ##################################
 # set the names to lower case because I'm lazy
-  names(railStations) %<>% tolower
+  names(railStations) %<>% make.names() %>% tolower()
   names(locations) %<>% tolower
 
 # Rail stations data -----------------------------------------------------------
@@ -96,29 +96,33 @@ ExtractTitle <- function(url) {
     str_split(";")
 
 lattitude <- sapply(1:length(coordsClean), function(x) coordsClean[[x]][1]) %>%
-  str_trim() %>%
-  as.numeric()
+             str_trim() %>%
+             as.numeric()
 
 longitude <- sapply(1:length(coordsClean), function(x) coordsClean[[x]][2]) %>%
-  str_trim() %>%
-  str_extract("-[0-9].[0-9]*|[0-9].[0-9]*") %>%
-  as.numeric()
+             str_trim() %>%
+             str_extract("-[0-9].[0-9]*|[0-9].[0-9]*") %>%
+             as.numeric()
 
 
 # add latt and long back to data frame
-railStations %<>% mutate(long = longitude,
+  railStations %<>% mutate(long = longitude,
                          lat = lattitude) %>%
-  select(-coordinates)
+                    select(-coordinates)
+
+# clean up
+  rm(list = c("coordsRaw", "coordsClean", "lattitude", "longitude"))
+  gc()
 
 # Tube stations data -----------------------------------------------------------
 # find those pages that weren't really stations/where the link didn't work
-  errors <- grep("[Tt]alk|[Gg]roup|[Cc]ategory|[Ee]rror|[Cc]hanges|[Pp]ages|[Ff]ile|[Ll]ist", locations$titleClean)
+  errors <- grep("[Tt]alk|[Gg]roup|[Cc]ategory|[Ee]rror|[Cc]hanges|[Pp]ages|[Ff]ile|[Ll]ist", locations$title.clean)
 
 # cut out the broken links and take unique values
   locations <- locations[-errors,] %>% unique()
 
 # split up the coordinates (currently lat and long in one field)
-  geoSplit <- str_split(locations$geosClean, ";")
+  geoSplit <- str_split(locations$geos.clean, ";")
 
 # pick up lat
   lat <- sapply(1:length(geoSplit), function(x) geoSplit[[x]][1]) %>% as.numeric
@@ -127,14 +131,50 @@ railStations %<>% mutate(long = longitude,
   long <- sapply(1:length(geoSplit), function(x) geoSplit[[x]][2]) %>% as.numeric
 
 # combine in to one data set
-  tubeStations <- data.frame(station = locations$titleClean, long, lat)
+  tubeStations <- data.frame(station = locations$title.clean, long, lat)
+
+# clean up
+  rm(list = c("errors", "locations", "geoSplit", "lat", "long"))
+  gc()
 
 # combine all stations w/ coordinates in to one --------------------------------
-
 stations <- railStations %>% select(station, long, lat) %>%
-            rbind(tubeStations) %>% arrange(station)
+            rbind(tubeStations) %>%
+            arrange(station) %>%
+            unique()
 
-stations$station %<>% gsub("[Ss]tation|[Tt]ube|\\[|\\]|[0-9]|", "", .) %>% str_trim
-stations %<>% unique()
+# clean up
+  rm(list = c("railStations", "tubeStations"))
+  gc()
+
+
+# clean combined data set station names ----------------------------------------
+stations$station %<>%
+  gsub("\\[.*\\]|[Tt]ube|[Ss]tation|[Rr]ailway||\\(.*\\)",
+       "", .) %>%
+  str_trim()
+
+stations %<>%
+  group_by(station) %>%
+  mutate(rank = row_number(station)) %>%
+  filter(rank == 1) %>%
+  select(-rank)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
