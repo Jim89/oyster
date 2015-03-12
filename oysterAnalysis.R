@@ -1,7 +1,6 @@
 ########################### Set up environment #################################
 # load required packages
   library(lubridate)
-  library(chron)
   library(dplyr)
   library(magrittr)
   library(stringr)
@@ -19,7 +18,7 @@
   source("./gettingAndCleaning/02_stationsData.R")
   source("./gettingAndCleaning/03_combined.R")
   print("Complete, took:")
-  proc.time() - ptm
+  proc.time() - ptm;
 
 # set up some colours to use
   districtLine <- col2rgb("#007229")
@@ -30,7 +29,6 @@
 # histogram of journey times split by weekend
 journeyTimeHist <-
 combined %>%
-  mutate(weekend = ifelse(start.day %in% c("Sat", "Sun"), "Weekend", "Weekday")) %>%
   ggplot(aes(x = journey.time %>% as.numeric)) +
   geom_histogram(binwidth = 5, aes(fill = weekend), alpha = 0.8, colour = "lightgrey") +
   facet_grid(weekend ~ ., scales = "fixed") +
@@ -52,15 +50,40 @@ combined %>%
         panel.margin.y = unit(0.1, units = "in"),
         panel.background = element_rect(fill = "white",colour = "lightgrey"))
 
+start <- "06:30:00" %>% strptime(format = "%T") %>% as.POSIXct
+end <- "08:00:00" %>% strptime(format = "%T") %>% as.POSIXct
 
 combined %>%
-  mutate(start.time.rounded = start.datetime.rounded %>% as.character %>%
-           str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>%
-  group_by(start.time.rounded) %>%
-  summarise(journey.time = journey.time %>% as.numeric %>% mean) %>%
-  mutate(start.time.rounded %>% strptime(format = "%T")) %>%
-  ggplot(aes(x = start.time.rounded, y = journey.time, group = 1 )) +
+  filter(weekend != "Weekend") %>%
+  mutate(start.time.clean = start.time.clean %>% as.character %>%
+           str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]") %>%
+           strptime(format = "%T") %>%
+           as.POSIXct) %>%
+  filter(start.time.clean %>% between(start, end)) %>%
+  group_by(start.time.clean) %>%
+  summarise(journeys = n(),
+            journey.time = journey.time %>% as.numeric %>% mean) %>% #View
+ mutate(start.time.clean = start.time.clean %>% as.character %>% str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>%
+  ggplot(aes(x = start.time.clean, y = journey.time, group = 1)) +
   geom_line() +
-  theme(axis.text.x = element_text(angle = -90))
+  geom_point(aes(size = journeys), colour = kpmgDarkBlue) +
+  scale_size(name = "Number of\nJourneys") +
+  xlab("Departure Time") +
+  ylab("Journey Time / minutes") +
+ # geom_smooth(method = "lm", colour = kpmgDarkBlue, alpha = 0.8) +
+  #scale_x_datetime(breaks = date_breaks("2.5 min")) +
+#  geom_smooth(method = "loess") +
+  theme(legend.position = "bottom",
+        axis.text.x = element_text(angle = -90),
+        axis.text.y = element_text(size = 12),
+        axis.title.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.x = element_line(colour = "lightgrey", linetype = "dotted"),
+        panel.grid.major.y = element_line(colour = "lightgrey", linetype = "dotted"),
+        panel.grid.minor.y = element_blank(),
+        panel.margin.y = unit(0.1, units = "in"),
+        panel.background = element_rect(fill = "white",colour = "lightgrey"),
+        legend.background = element_rect(fill = "white"))
 
 
