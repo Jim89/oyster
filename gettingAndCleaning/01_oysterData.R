@@ -1,14 +1,8 @@
-############### set up working environment and load packages ###################
-library(lubridate)
-library(dplyr)
-library(magrittr)
-library(stringr)
-
 ########################## Get the raw data to be used #########################
 
 # Raw Oyster Data (provided by TFL) --------------------------------------------
 files <-
-  list.files("../data",recursive = T) %>% as.list %>% paste0("../data/", .)
+  list.files("./data",recursive = T) %>% as.list %>% paste0("./data/", .)
 
 # read in the data
 oyster <-
@@ -100,11 +94,11 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
 
 # get the "from" station
   from <- sapply(1:length(toFrom), function(x) toFrom[[x]][1]) %>%
-          gsub("\\[.*\\]|\\(.*\\)","", .) %>% str_trim()
+          gsub("\\[.*\\]|\\(.*\\)| [Dd][Ll][Rr]","", .) %>% str_trim()
 
 # get the "to" station
   to <- sapply(1:length(toFrom), function(x) toFrom[[x]][2]) %>%
-          gsub("\\[.*\\]|\\(.*\\)","", .) %>% str_trim()
+          gsub("\\[.*\\]|\\(.*\\)| [Dd][Ll][Rr]","", .) %>% str_trim()
 
 # put back in to data
   oyster %<>%
