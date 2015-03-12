@@ -113,5 +113,5 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
            )
 
 # clear out the junk
-  rm(list = c("afterMidnight", "badRecords", "from", "to", "toFrom"))
+  rm(list = c("afterMidnight", "badRecords", "from", "to", "toFrom", "files"))
   gc()
