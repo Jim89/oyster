@@ -5,7 +5,54 @@ library(dplyr)
 library(magrittr)
 library(stringr)
 
-source("./functions/getStationsData.R")
+############### create helper functions for getting data #######################
+# railway stations data from wikipedia -----------------------------------------
+GetRailStations <-
+  function(url = "http://en.wikipedia.org/wiki/List_of_London_railway_stations") {
+    # function that loads a URL and extracts the first table from the page
+    # by default it will operate on the Wikipedia list of london railway
+    # stations page. The first table contains the location data for each station
+  url %>%
+  html() %>%
+  html_nodes("table") %>%
+  .[[1]] %>%
+  html_table %>%
+  tbl_df()
+}
+
+# tube stations from wikipedia -------------------------------------------------
+# starting with Baker street, get the links to the other stations
+ExtractLinks <-
+function(url = "http://en.wikipedia.org/wiki/Baker_Street_tube_station") {
+  # takes a URL and extracts all links from it
+  url %>%
+    html() %>%
+    html_nodes("a") %>%
+    html_attr("href") %>%
+    grep("wiki", ., value = T) %>%
+    grep("station", ., value = T) %>%
+    paste0("http://en.wikipedia.org",.)
+}
+
+# function to extract coordinates from a station page
+ExtractGeo <- function(url) {
+  # takes a URL and uses the CSS selector provided by SelectorGadget widget to
+  # extract the dirty coordinates data from it
+  url %>%
+    html() %>%
+    html_nodes("span span span span span span.geo") %>%
+    html_text()
+}
+
+# function to extract station name
+ExtractTitle <- function(url) {
+  # takes a URL and uses the CSS selector provided by SelectorGadget widget to
+  # extract the first header, which in this case is the wikipedia page title
+  url %>%
+    html() %>%
+    html_nodes("div h1") %>%
+    html_text()
+}
 
 ########################## Get the raw data to be used #########################
 
@@ -19,20 +66,20 @@ oyster <-
 
 # rail stations Data from Wikipedia --------------------------------------------
 # get railway stations information
-  railStations <- getRailStations()
+  railStations <- GetRailStations()
 
 # tube stations Data from Wikipedia --------------------------------------------
 # starting from Baker St, find all links on the page
-  links <- extractLinks()
+  links <- ExtractLinks()
 
 # loop over the links and try to extract the coordinates from the page
-  geos <- sapply(1:length(links), function(x) try(extractGeo(links[x]), silent = T))
+  geos <- sapply(1:length(links), function(x) try(ExtractGeo(links[x]), silent = T))
 
 # clean up the coordinates
   geosClean <- sapply(1:length(geos), function(x) geos[[x]][1])
 
 # loop over the links and extract the station name from the page
-  titles <- sapply(1:length(links), function(x) try(extractTitle(links[x]), silent = T))
+  titles <- sapply(1:length(links), function(x) try(ExtractTitle(links[x]), silent = T))
 
 # clean up the station names
   titleClean <- sapply(1:length(titles), function(x) titles[[x]][1])
@@ -43,6 +90,53 @@ oyster <-
 # clean up
   rm(list = c("files", "links", "geos","geosClean", "titles", "titleClean"))
   gc()
+
+############### create helper functions for rounding times #####################
+# CelingTime- Round at time UP with arbitrary precision
+# based on FloorTime sourced from here: http://stackoverflow.com/questions/16803867/round-a-date-in-r-to-an-arbitrary-level-of-precision
+CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
+                                            "week", "month", "year")) {
+# Function requires lubridate - load it
+  library(lubridate, quietly=T)
+
+  nmax <- NULL
+
+  switch(unit, second = {nmax <- 60},
+               minute = {nmax <- 60},
+               hour   = {nmax <- 24})
+
+  cuts <- seq(from = 0, to = nmax - 1, by = k)
+
+# Rounds times down to the nearest kth unit interval
+  rounded <-switch(unit,
+            second = update(x, seconds = cuts[findInterval(second(x), cuts)]),
+            minute = update(x, minutes = cuts[findInterval(minute(x), cuts)],
+                               seconds = 0),
+            hour   = update(x, hours = cuts[findInterval(hour(x), cuts)],
+                               minutes = 0, seconds = 0),
+            day    = update(x, hours = 0, minutes = 0, seconds = 0),
+            week   = update(x, wdays = 1, hours = 0, minutes = 0, seconds = 0),
+            month  = update(x, mdays = 1, hours = 0, minutes = 0, seconds = 0),
+            year   = update(x, ydays = 1, hours = 0, minutes = 0, seconds = 0))
+
+# Round up to the next kth unit interval
+  if (unit=="second") {
+    rounded <- rounded + seconds(k)
+  } else if (unit == "minute") {
+      rounded <- rounded + minutes(k)
+  } else if (unit == "hour") {
+      rounded <- rounded + hours(k)
+  } else if (unit == "day") {
+      rounded <- rounded + days(k)
+  } else if (unit == "week") {
+      rounded <- rounded + weeks(k)
+  } else if (unit == "month") {
+      rounded <- rounded + months(k)
+  } else if(unit == "year") {
+      rounded <- rounded + years(k)
+    }
+  return(rounded)
+}
 
 
 ############################# Clean the data ##################################
@@ -62,22 +156,20 @@ oyster <-
          end.time.clean = end.time %>% paste0(":00"),
          date.clean = dmy(date),
          start.datetime = paste(date, start.time.clean, sep = " ") %>% dmy_hms(),
-         end.datetime = paste(date, end.time.clean, sep = " ") %>% dmy_hms()
+         end.datetime = paste(date, end.time.clean, sep = " ") %>% dmy_hms())
          )
 
 # find records where I touched out after mighnight
   afterMidnight <- substring(oyster$end.time,1,2) %in% c("00","01")
 
-# set the end date/times to be the next day (i.e. after midnight)
-# dates
+# set the end datetimes to be the next day (i.e. after midnight) where needed
   oyster[afterMidnight, 13]  <-  oyster[afterMidnight, 13] + days(1)
 
-# datetimes
-  oyster[afterMidnight, 15]  <-  oyster[afterMidnight, 15] + days(1)
 
 # create journey times and days of the week
   oyster %<>%
-  mutate(journey.time = difftime(end.datetime, start.datetime, units = "mins"),
+  mutate(start.datetime.rounded = CeilingTime(start.datetime, 15, "minute"),
+         journey.time = difftime(end.datetime, start.datetime, units = "mins"),
          start.day = wday(start.datetime, label = T)
         )
 
