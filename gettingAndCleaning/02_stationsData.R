@@ -1,9 +1,3 @@
-############### set up working environment and load packages ###################
-library(rvest)
-library(dplyr)
-library(magrittr)
-library(stringr)
-
 ############### create helper functions for getting data #######################
 # railway stations data from wikipedia -----------------------------------------
 GetRailStations <-
@@ -150,31 +144,74 @@ stations <- railStations %>% select(station, long, lat) %>%
 
 # clean combined data set station names ----------------------------------------
 stations$station %<>%
-  gsub("\\[.*\\]|[Tt]ube|[Ss]tation|[Rr]ailway||\\(.*\\)",
+  gsub("\\[.*\\]|[Tt]ube|[Ss]tation|[Rr]ailway| [Dd][Ll][Rr]|\\(.*\\)",
        "", .) %>%
   str_trim()
 
+# clean indidivual station names that do not match to oyster data --------------
+# Kings Cross
+  missing <- grep("King's", stations$station)
+  stations[missing, 1] <- "Kings Cross"
+
+# Bank
+  missing <- grep("Bank", stations$station)
+  stations[missing, 1] <- "Bank"
+
+# Old Street
+  missing <- grep("[Oo]ld Stree", stations$station)
+  stations[missing, 1] <- "Old Street"
+
+# Caledonian Road
+  missing <- grep("[Cc]ale", stations$station)
+  stations[missing, 1] <- "Caledonian Road and Barnsbury"
+
+# get and add in missing staions -----------------------------------------------
+missing <- c("http://en.wikipedia.org/wiki/Leicester_Square_tube_station",
+                     "http://en.wikipedia.org/wiki/Kennington_tube_station",
+                     "http://en.wikipedia.org/wiki/Warren_Street_tube_station",
+                     "http://en.wikipedia.org/wiki/Covent_Garden_tube_station",
+                     "http://en.wikipedia.org/wiki/Mornington_Crescent_tube_station",
+                     "http://en.wikipedia.org/wiki/Camden_Town_tube_station",
+                     "http://en.wikipedia.org/wiki/Pimlico_tube_station",
+                     "http://en.wikipedia.org/wiki/Goodge_Street_tube_station",
+                     "http://en.wikipedia.org/wiki/Hyde_Park_Corner_tube_station",
+                     "http://en.wikipedia.org/wiki/Earl%27s_Court_tube_station",
+                     "http://en.wikipedia.org/wiki/Hounslow_East_tube_station",
+                     "http://en.wikipedia.org/wiki/Angel_tube_station")
+
+missing.geos <- sapply(1:length(missing), function(x) missing[[x]] %>%
+                         ExtractGeo()) %>% str_split(";")
+
+lattitude <- sapply(1:length(missing.geos), function(x) missing.geos[[x]][1]) %>%
+             str_trim() %>%
+             as.numeric()
+
+longitude <- sapply(1:length(missing.geos), function(x) missing.geos[[x]][2]) %>%
+             str_trim() %>%
+             str_extract("-[0-9].[0-9]*|[0-9].[0-9]*") %>%
+             as.numeric()
+
+
+missing.titles <- sapply(1:length(missing), function(x) missing[[x]] %>%
+                                    ExtractTitle()) %>%
+                  gsub(" [Tt]ube [Ss]tation|\\'", "", .) %>%
+                  str_trim()
+
+missing <- data.frame(station = missing.titles,
+                      long = longitude,
+                      lat = lattitude)
+
+
+# final clean up ---------------------------------------------------------------
+# clean up and strip out duplicates
 stations %<>%
+  rbind(missing) %>%
   group_by(station) %>%
   mutate(rank = row_number(station)) %>%
   filter(rank == 1) %>%
   select(-rank)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# clean up directory
+  rm(list = c("missing", "missing.geos", "longitude", "lattitude",
+              "missing.titles"))
