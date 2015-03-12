@@ -1,5 +1,4 @@
 ########################## Get the raw data to be used #########################
-
 # Raw Oyster Data (provided by TFL) --------------------------------------------
 files <-
   list.files("./data",recursive = T) %>% as.list %>% paste0("./data/", .)
@@ -86,8 +85,9 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
   oyster %<>%
   mutate(start.datetime.rounded = CeilingTime(start.datetime, 15, "minute"),
          journey.time = difftime(end.datetime, start.datetime, units = "mins"),
-         start.day = wday(start.datetime, label = T)
-        )
+         start.day = wday(start.datetime, label = T),
+         weekend = ifelse(start.day %in% c("Sat", "Sun"), "Weekend", "Weekday")
+         )
 
 # split up the journey in to "to" and "from"
   toFrom <- str_split(oyster$journey.action, " to")
