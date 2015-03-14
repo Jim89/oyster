@@ -57,7 +57,7 @@ theme(axis.title.y = element_blank(),
 
 # line chart of journey times for my commute -----------------------------------
 # create function to plot the data (as I'll do it for both morning and evening)
-CommutePlot <- function (data, start, end) {
+CommutePlot <- function (data, start, end, interval) {
 # take the data and perform some manipulations
 data %>%
   filter(weekend != "Weekend") %>%
@@ -65,7 +65,7 @@ data %>%
            str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]") %>%
            strptime(format = "%T") %>%
            as.POSIXct %>%
-           CeilingTime(2, "minute")) %>%
+           CeilingTime(interval, "minute")) %>%
   filter(start.time.clean %>% between(start, end)) %>%
   group_by(start.time.clean) %>%
   summarise(journeys = n(),
@@ -105,19 +105,64 @@ data %>%
   endEvening <- "19:00:00" %>% strptime(format = "%T") %>% as.POSIXct
 
 # create the plots
-  morningCommute <- CommutePlot(combined, startMorning, endMorning)
-  eveningCommute <- CommutePlot(combined, startEvening, endEvening)
+  morningCommute <- CommutePlot(combined, startMorning, endMorning, 2)
+  eveningCommute <- CommutePlot(combined, startEvening, endEvening, 2)
+  
+# journeys over the day --------------------------------------------------------
+  start <- "05:00:00" %>% strptime(format = "%T") %>% as.POSIXct
+  end <- "21:00:00" %>% strptime(format = "%T") %>% as.POSIXct
+
+dailyActivity <- 
+combined %>%
+# filter(weekend != "Weekend") %>%
+ mutate(start.time.clean = start.time.clean %>% as.character %>%
+          str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]") %>%
+          strptime(format = "%T") %>%
+          as.POSIXct %>%
+          CeilingTime(5, "minute")) %>% # View
+  filter(start.time.clean %>% between(start, end)) %>%
+  group_by(start.time.clean) %>%
+  summarise(journeys = n()) %>% # View
+  mutate(start.time.clean = start.time.clean %>% as.character %>% 
+           str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>% 
+  # make the plot itself
+  ggplot(aes(x = start.time.clean, y = journeys, group = 1)) +
+  geom_line(colour = kpmgDarkBlue) +
+#  geom_point(aes(size = journeys), alpha = 0.8) +
+#  scale_size(name = "Number of\nJourneys", range = c(0, 10)) +
+  xlab("Departure Time") +
+  ylab("Journeys") +
+#  geom_smooth(method = "lm", alpha = 0.075) +
+#  geom_smooth(method = "loess", size = 0.5, colour = kpmgPurple, alpha = 0.25) +
+  theme(legend.position = "bottom",
+        axis.text.x = element_text(angle = -90),
+        axis.text.y = element_text(size = 12),
+        #axis.title.y = element_blank(),
+        #axis.ticks.y = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.x = element_line(colour = "lightgrey", 
+                                          linetype = "dotted"),
+        panel.grid.major.y = element_line(colour = "lightgrey", 
+                                          linetype = "dotted"),
+        panel.grid.minor.y = element_blank(),
+        panel.margin.y = unit(0.1, units = "in"),
+        panel.background = element_rect(fill = "white",colour = "lightgrey"),
+        legend.background = element_rect(fill = "white")) 
+
 
 # try some plots on a map ------------------------------------------------------
 mapDetail <- get_map(location = c(lon = -0.1275, lat = 51.507222), 
-                     color = "color", source = "google", maptype = "roadmap",
-                     zoom = 10)
-map <- ggmap(mapDetail,
-             extent = "panel",
-             ylab = "Latitude",
-             xlab = "Longitude")
-
-map + geom_point(data = combined, aes(x = from.long, y = from.lat))
+                     color = "bw", source = "google", maptype = "roadmap",
+                     zoom = 11)
+#map <- 
+ggmap(mapDetail, extent = "panel", ylab = "Latitude", xlab = "Longitude") + 
+geom_point(data = combined %>%
+                  group_by(from, from.long, from.lat) %>% 
+                  summarise(visits = n()), 
+           aes(x = from.long, y = from.lat, size = visits, colour = -visits),
+           alpha = 0.8) 
+  
+  
 
 
 
