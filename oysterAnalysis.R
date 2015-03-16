@@ -152,8 +152,35 @@ combined %>%
 
 # try some plots on a map ------------------------------------------------------
 mapDetail <- get_map(location = c(lon = -0.1275, lat = 51.507222),
-                     color = "bw", source = "google", maptype = "roadmap",
-                     zoom = 11)
+                     color = "color", source = "google", maptype = "road",
+                     zoom = 11, scale = 2), style = c(constant = "transit.line"))
+
+london <- get_googlemap(center = c(lon = -0.1275, lat = 51.507222),
+                        zoom = 11, maptype = "road", color = "color",
+                        style = c(feature = "transit.line",
+                                  element = "geometry.fill",
+                                  visbility = "on",
+                                  colour = "#00338D"))
+ggmap(london)
+
+style <- "style=feature:transit.line|element:all|visibility:on|invert_lightness:false"
+
+get_googlemap(center = c(lon = -0.1275, lat = 51.507222),
+              maptype = "road",
+              color = "color",
+              #style = style,
+              zoom = 11) %>%
+  ggmap()
+
+http://maps.googleapis.com/maps/api/staticmap?center=51.54339,-0.128378&zoom=11&format=png&sensor=false&size=640x480&maptype=roadmap&style=feature:road|visibility:off&style=feature:water|visibility:on&style=feature:road|element:labels|visibility:off&style=feature:administrative|visibility:off&style=feature:transit.line|element:geometry|visibility:on|invert_lightness:true
+
+
+style2 <- "style=feature:road|visibility:off&style=feature:water|visibility:on&style=feature:road|element:labels|visibility:off&style=feature:administrative|visibility:off&style=feature:transit.line|element:geometry|visibility:on|invert_lightness:true
+"
+get_googlemap(center = c(lon = -0.1275, lat = 51.507222),
+              zoom = 11,
+              style = style2) %>% ggmap()
+
 #map <-
 ggmap(mapDetail, extent = "panel", ylab = "Latitude", xlab = "Longitude") +
 geom_point(data = combined %>%
@@ -162,7 +189,7 @@ geom_point(data = combined %>%
            aes(x = from.long, y = from.lat, size = visits, colour = -visits),
            alpha = 0.8)
 
-
+raw <- "https://www.google.com/maps/@51.5029189,-0.1479717,12z/data=!5m1!1e2?hl=en"
 
 
 
