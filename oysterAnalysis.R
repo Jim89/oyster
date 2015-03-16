@@ -32,11 +32,11 @@ kpmgPurple <- rgb(red = 142, green = 37, blue = 141, maxColorValue = 255)
 journeyTimeHist <-
 combined %>%
 ggplot(aes(x = journey.time %>% as.numeric)) +
-geom_histogram(binwidth = 5, aes(fill = weekend), alpha = 0.8, 
+geom_histogram(binwidth = 5, aes(fill = weekend), alpha = 0.8,
                colour = "lightgrey") +
 facet_grid(weekend ~ ., scales = "fixed") +
 scale_x_continuous(breaks = seq(from = 0,
-                                to = max(combined$journey.time) %>% 
+                                to = max(combined$journey.time) %>%
                                      as.numeric + 5,
                                 by = 5)) +
 scale_fill_manual(values = rep(kpmgDarkBlue, 2), guide = F) +
@@ -46,7 +46,7 @@ theme(axis.title.y = element_blank(),
       #axis.text.y = element_blank(),
       text = element_text(size = 14),
       panel.grid.minor.x = element_blank(),
-      panel.grid.major.x = element_line(colour = "lightgrey", 
+      panel.grid.major.x = element_line(colour = "lightgrey",
                                         linetype = "dotted"),
       panel.grid.major.y = element_blank(),
       panel.grid.minor.y = element_blank(),
@@ -70,7 +70,7 @@ data %>%
   group_by(start.time.clean) %>%
   summarise(journeys = n(),
             journey.time = journey.time %>% as.numeric %>% mean) %>% # View
-  mutate(start.time.clean = start.time.clean %>% as.character %>% 
+  mutate(start.time.clean = start.time.clean %>% as.character %>%
            str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>%
 # make the plot itself
   ggplot(aes(x = start.time.clean, y = journey.time, group = 1)) +
@@ -87,14 +87,14 @@ data %>%
         #axis.title.y = element_blank(),
         #axis.ticks.y = element_blank(),
         panel.grid.minor.x = element_blank(),
-        panel.grid.major.x = element_line(colour = "lightgrey", 
+        panel.grid.major.x = element_line(colour = "lightgrey",
                                           linetype = "dotted"),
-        panel.grid.major.y = element_line(colour = "lightgrey", 
+        panel.grid.major.y = element_line(colour = "lightgrey",
                                           linetype = "dotted"),
         panel.grid.minor.y = element_blank(),
         panel.margin.y = unit(0.1, units = "in"),
         panel.background = element_rect(fill = "white",colour = "lightgrey"),
-        legend.background = element_rect(fill = "white")) 
+        legend.background = element_rect(fill = "white"))
 }
 
 # set up start and end time windows
@@ -107,24 +107,24 @@ data %>%
 # create the plots
   morningCommute <- CommutePlot(combined, startMorning, endMorning, 2)
   eveningCommute <- CommutePlot(combined, startEvening, endEvening, 2)
-  
+
 # journeys over the day --------------------------------------------------------
   start <- "05:00:00" %>% strptime(format = "%T") %>% as.POSIXct
   end <- "21:00:00" %>% strptime(format = "%T") %>% as.POSIXct
 
-dailyActivity <- 
+dailyActivity <-
 combined %>%
 # filter(weekend != "Weekend") %>%
  mutate(start.time.clean = start.time.clean %>% as.character %>%
           str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]") %>%
           strptime(format = "%T") %>%
           as.POSIXct %>%
-          CeilingTime(5, "minute")) %>% # View
+          CeilingTime(10, "minute")) %>% # View
   filter(start.time.clean %>% between(start, end)) %>%
   group_by(start.time.clean) %>%
   summarise(journeys = n()) %>% # View
-  mutate(start.time.clean = start.time.clean %>% as.character %>% 
-           str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>% 
+  mutate(start.time.clean = start.time.clean %>% as.character %>%
+           str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>%
   # make the plot itself
   ggplot(aes(x = start.time.clean, y = journeys, group = 1)) +
   geom_line(colour = kpmgDarkBlue) +
@@ -140,29 +140,29 @@ combined %>%
         #axis.title.y = element_blank(),
         #axis.ticks.y = element_blank(),
         panel.grid.minor.x = element_blank(),
-        panel.grid.major.x = element_line(colour = "lightgrey", 
+        panel.grid.major.x = element_line(colour = "lightgrey",
                                           linetype = "dotted"),
-        panel.grid.major.y = element_line(colour = "lightgrey", 
+        panel.grid.major.y = element_line(colour = "lightgrey",
                                           linetype = "dotted"),
         panel.grid.minor.y = element_blank(),
         panel.margin.y = unit(0.1, units = "in"),
         panel.background = element_rect(fill = "white",colour = "lightgrey"),
-        legend.background = element_rect(fill = "white")) 
+        legend.background = element_rect(fill = "white"))
 
 
 # try some plots on a map ------------------------------------------------------
-mapDetail <- get_map(location = c(lon = -0.1275, lat = 51.507222), 
+mapDetail <- get_map(location = c(lon = -0.1275, lat = 51.507222),
                      color = "bw", source = "google", maptype = "roadmap",
                      zoom = 11)
-#map <- 
-ggmap(mapDetail, extent = "panel", ylab = "Latitude", xlab = "Longitude") + 
+#map <-
+ggmap(mapDetail, extent = "panel", ylab = "Latitude", xlab = "Longitude") +
 geom_point(data = combined %>%
-                  group_by(from, from.long, from.lat) %>% 
-                  summarise(visits = n()), 
+                  group_by(from, from.long, from.lat) %>%
+                  summarise(visits = n()),
            aes(x = from.long, y = from.lat, size = visits, colour = -visits),
-           alpha = 0.8) 
-  
-  
+           alpha = 0.8)
+
+
 
 
 
