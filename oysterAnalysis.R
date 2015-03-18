@@ -152,18 +152,30 @@ combined %>%
 
 
 # try some plots on a map ------------------------------------------------------
-style <- "feature:road|visibility:off&style=feature:water|visibility:on&style=feature:road|element:labels|visibility:off&style=feature:administrative|visibility:off&style=feature:transit.line|element:geometry.fill|visibility:on|invert_lightness:true|lightness:100
+style <- "feature:road|visibility:off&style=feature:water|visibility:on&style=feature:road|element:labels|visibility:off&style=feature:administrative|visibility:off&style=feature:transit.line|element:geometry.fill|visibility:on|invert_lightness:true|color:0x00338D
 "
 map <- get_googlemap(center = c(lon = -0.1275, lat = 51.507222),
               zoom = 11,
+              colour = "bw",
               style = style)
 
+a <- combined %>%
+     select(from, from.long, from.lat)
+names(a) <- c("station", "long", "lat")
+b <- combined %>%
+     select(to, to.long, to.lat)
+names(b) <- c("station", "long", "lat")
+
+places <- rbind(a, b)
+rm(list = c("a", "b"))
+
 ggmap(map, extent = "panel") +
-geom_point(data = combined %>%
-                  group_by(from, from.long, from.lat) %>%
+geom_point(data = places %>%
+                  group_by(station, long, lat) %>%
                   summarise(visits = n()),
-           aes(x = from.long, y = from.lat, size = visits),
-           alpha = 1)
+           aes(x = long, y = lat, size = visits),
+           alpha = 1,
+           colour = kpmgPurple)
 
 raw <- "https://www.google.com/maps/@51.5029189,-0.1479717,12z/data=!5m1!1e2?hl=en"
 
