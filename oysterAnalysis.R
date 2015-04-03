@@ -152,8 +152,7 @@ combined %>%
 
 
 # try some plots on a map ------------------------------------------------------
-style <- "feature:road|visibility:off&style=feature:water|visibility:on&style=feature:road|element:labels|visibility:off&style=feature:administrative|visibility:off&style=feature:transit.line|element:geometry.fill|visibility:on|invert_lightness:true|lightness:100
-"
+style <- "feature:road|visibility:off&style=feature:water|visibility:on&style=feature:road|element:labels|visibility:off&style=feature:administrative|visibility:off&style=feature:transit.line|element:geometry.fill|visibility:on|invert_lightness:true|color:0x0338D|lightness:0"
 map <- get_googlemap(center = c(lon = -0.1275, lat = 51.507222),
               zoom = 11,
               style = style)
@@ -165,7 +164,6 @@ geom_point(data = combined %>%
            aes(x = from.long, y = from.lat, size = visits),
            alpha = 1)
 
-raw <- "https://www.google.com/maps/@51.5029189,-0.1479717,12z/data=!5m1!1e2?hl=en"
 
 
 
