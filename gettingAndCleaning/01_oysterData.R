@@ -3,7 +3,10 @@
 files <-
   list.files("./data",recursive = T) %>% as.list %>% paste0("./data/", .)
 
-# read in the data
+# remove the stations data (otherwise it'll throw an error) --------------------
+files <- files[-grep("stations", files)]
+
+# read in the data -------------------------------------------------------------
 oyster <-
   lapply(files, function(x) read.csv(x, stringsAsFactors = F, skip = 1)) %>% rbind_all
 
