@@ -47,7 +47,11 @@ ExtractTitle <- function(url) {
     html_text()
 }
 
-########################## Get the raw data to be used #########################
+
+# if the stations data doesn't exist -------------------------------------------
+  if (!file.exists("./data/stations.csv")) {
+
+  ########################## Get the raw data to be used #########################
 # rail stations Data from Wikipedia --------------------------------------------
 # get railway stations information
   railStations <- GetRailStations()
@@ -211,7 +215,14 @@ stations %<>%
   filter(rank == 1) %>%
   select(-rank)
 
+write.csv(stations, "./data/stations.csv", row.names = F)
 
 # clean up directory
   rm(list = c("missing", "missing.geos", "longitude", "lattitude",
-              "missing.titles"))
+              "missing.titles", "stations"))
+} else {
+# read in the data -------------------------------------------------------------
+stations <- read.csv("./data/stations.csv", header = T, stringsAsFactors = F)
+}
+
+
