@@ -6,8 +6,6 @@ library(magrittr)
 library(stringr)
 library(rvest)
 library(ggplot2)
-library(RgoogleMaps)
-library(ggmap)
 library(grid)
 library(scales)
 
@@ -34,7 +32,7 @@ journeyTimeHist <-
 combined %>%
 ggplot(aes(x = journey.time %>% as.numeric)) +
 geom_histogram(binwidth = 5, aes(fill = weekend), alpha = 0.8,
-               colour = "lightgrey") +
+               colour = "white") +
 facet_grid(weekend ~ ., scales = "fixed") +
 scale_x_continuous(breaks = seq(from = 0,
                                 to = max(combined$journey.time) %>%
@@ -47,12 +45,13 @@ theme(axis.title.y = element_blank(),
       #axis.text.y = element_blank(),
       text = element_text(size = 14),
       panel.grid.minor.x = element_blank(),
-      panel.grid.major.x = element_line(colour = "lightgrey",
-                                        linetype = "dotted"),
+      panel.grid.major.x = element_blank(),
+#         element_line(colour = "lightgrey",
+#                                         linetype = "dotted"),
       panel.grid.major.y = element_blank(),
       panel.grid.minor.y = element_blank(),
       panel.margin.y = unit(0.1, units = "in"),
-      panel.background = element_rect(fill = "white",colour = "lightgrey"))
+      panel.background = element_rect(fill = "white", colour = "lightgrey"))
 
 
 
@@ -76,7 +75,7 @@ data %>%
 # make the plot itself
   ggplot(aes(x = start.time.clean, y = journey.time, group = 1)) +
   geom_line(colour = kpmgDarkBlue) +
-  geom_point(aes(size = journeys), colour = kpmgDarkBlue, alpha = 0.8) +
+#  geom_point(aes(size = journeys), colour = kpmgDarkBlue, alpha = 0.8) +
   scale_size(name = "Number of\nJourneys", range = c(0, 10)) +
   xlab("Departure Time") +
   ylab("Average Journey Time / minutes") +
@@ -88,8 +87,9 @@ data %>%
         #axis.title.y = element_blank(),
         #axis.ticks.y = element_blank(),
         panel.grid.minor.x = element_blank(),
-        panel.grid.major.x = element_line(colour = "lightgrey",
-                                          linetype = "dotted"),
+        panel.grid.major.x = element_blank(),
+#           element_line(colour = "lightgrey",s
+#                                           linetype = "dotted"),
         panel.grid.major.y = element_line(colour = "lightgrey",
                                           linetype = "dotted"),
         panel.grid.minor.y = element_blank(),
@@ -111,7 +111,7 @@ data %>%
 
 # journeys over the day --------------------------------------------------------
   start <- "05:00:00" %>% strptime(format = "%T") %>% as.POSIXct
-  end <- "21:00:00" %>% strptime(format = "%T") %>% as.POSIXct
+  end <- "22:30:00" %>% strptime(format = "%T") %>% as.POSIXct
 
 dailyActivity <-
 combined %>%
@@ -120,7 +120,7 @@ combined %>%
           str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]") %>%
           strptime(format = "%T") %>%
           as.POSIXct %>%
-          CeilingTime(10, "minute")) %>% # View
+          CeilingTime(30, "minute")) %>% # View
   filter(start.time.clean %>% between(start, end)) %>%
   group_by(start.time.clean) %>%
   summarise(journeys = n()) %>% # View
@@ -141,8 +141,9 @@ combined %>%
         #axis.title.y = element_blank(),
         #axis.ticks.y = element_blank(),
         panel.grid.minor.x = element_blank(),
-        panel.grid.major.x = element_line(colour = "lightgrey",
-                                          linetype = "dotted"),
+        panel.grid.major.x = element_blank(),
+#           element_line(colour = "lightgrey",
+#                                           linetype = "dotted"),
         panel.grid.major.y = element_line(colour = "lightgrey",
                                           linetype = "dotted"),
         panel.grid.minor.y = element_blank(),
@@ -150,8 +151,17 @@ combined %>%
         panel.background = element_rect(fill = "white",colour = "lightgrey"),
         legend.background = element_rect(fill = "white"))
 
+# save some plots ----- --------------------------------------------------------
+if (!dir.exists("./plots")) {
+  dir.create("./plots")
+}
 
+# journey time histogram
+  ggsave("./plots/journeyTimeHist.png", journeyTimeHist, width = 6, height = 4, units = "in")
 
+# journeys over the day
+  ggsave("./plots/dailyActivity.png", dailyActivity, width = 6, height = 4, units = "in")
 
-
-
+# commute time
+  ggsave("./plots/morningCommut.png", morningCommute, width = 6, height = 4, units = "in")
+  ggsave("./plots/eveningCommute.png", eveningCommute, width = 6, height = 4, units = "in")
