@@ -8,6 +8,7 @@ library(rvest)
 library(ggplot2)
 library(grid)
 library(scales)
+library(leaflet)
 
 # run the scripts that get, clean and combine the data together
 
@@ -165,3 +166,31 @@ if (!dir.exists("./plots")) {
 # commute time
   ggsave("./plots/morningCommut.png", morningCommute, width = 6, height = 4, units = "in")
   ggsave("./plots/eveningCommute.png", eveningCommute, width = 6, height = 4, units = "in")
+
+
+# set up a map widget ----------------------------------------------------------
+# reshape the data
+  vistited <- combined %>%
+              select(from, from.long, from.lat) %>%
+              setNames(c("station", "long", "lat")) %>%
+              rbind(combined %>%
+                      select(to, to.long, to.lat) %>%
+                      setNames(c("station", "long", "lat"))) %>%
+              group_by(station, long, lat) %>%
+              summarise(visits = n()) %>%
+              filter(!is.na((long)))
+
+# create pop-up text
+  popup <- paste0("<strong> Station: </strong>",
+                  vistited$station,
+                  "<br><strong>Visits: </strong>",
+                  vistited$visits)
+
+# create the widget
+  vistited %>%
+  leaflet() %>%
+  addTiles() %>%
+  setView(lng = -0.1275, lat = 51.5072, zoom = 11) %>%
+  addCircles(radius = ~3*visits, popup = popup, stroke = T,
+             fillColor = kpmgDarkBlue,
+             fillOpacity = 0.75)
