@@ -2,18 +2,26 @@ library(shiny)
 
 
 # Set up the application
-shinyUI(pageWithSidebar(
+shinyUI(fluidPage(
   # Create the title
-    headerPanel("Oyster Data Explorations"),
+    titlePanel("TfL Oyster Card Data Explorations"),
 
-    # Add a sidebar to switch between morning and evening commutes
+  # set up the sidebar
+    sidebarLayout(
       sidebarPanel(
-        checkboxGroupInput("box", "Select a group:",
-                         c("Weekday" = "Weekday",
-                           "Weekend" = "Weekend"
-                           ))),
-  # add the main panel
-    mainPanel(verbatimTextOutput("oid"),
-              plotOutput("hist"))
+        radioButtons("day", "Weekends or Weekdays?\n (affects histogram only)",
+                     c("Both" = "Both",
+                       "Weekday" = "Weekday",
+                       "Weekend" = "Weekend"))
+      ),
 
+  # add the main panel
+    mainPanel(
+      tabsetPanel(type = "tabs",
+                  tabPanel("Map", leafletOutput("map")),
+                  tabPanel("Journey Time Histogram", plotOutput("hist")),
+                  tabPanel("The Data", dataTableOutput("data"))
+                  )
+    )
+    )
 ))
