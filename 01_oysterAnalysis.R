@@ -36,8 +36,9 @@ geom_histogram(binwidth = 5, aes(fill = weekend), alpha = 0.8,
                colour = "white") +
 facet_grid(weekend ~ ., scales = "fixed") +
 scale_x_continuous(breaks = seq(from = 0,
-                                to = max(combined$journey.time) %>%
-                                     as.numeric + 5,
+                                to = combined$journey.time %>%
+                                     as.numeric() %>%
+                                     max(na.rm = T) + 5,
                                 by = 5)) +
 scale_fill_manual(values = rep(kpmgDarkBlue, 2), guide = F) +
 xlab("Journey time / minutes") +
