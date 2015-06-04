@@ -76,8 +76,8 @@ data %>%
            str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>%
 # make the plot itself
   ggplot(aes(x = start.time.clean, y = journey.time, group = 1)) +
-  geom_line(colour = kpmgDarkBlue) +
-#  geom_point(aes(size = journeys), colour = kpmgDarkBlue, alpha = 0.8) +
+#  geom_line(colour = kpmgDarkBlue) +
+  geom_point(aes(size = journeys), colour = kpmgDarkBlue, alpha = 0.8) +
   scale_size(name = "Number of\nJourneys", range = c(0, 10)) +
   xlab("Departure Time") +
   ylab("Average Journey Time / minutes") +
