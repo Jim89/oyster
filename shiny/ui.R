@@ -6,13 +6,15 @@
   library(shiny)
   library(leaflet)
   library(DT)
+  library(markdown)
 
 # Set up the application ui
-  shinyUI(navbarPage("TfL Oyster Data Explorer",
+  shinyUI(navbarPage("Oyster Explorer",
 
 # define the tabs to be used in the app ----------------------------------------
 # introduction splash
-  tabPanel("Intro"),
+  tabPanel("Intro",
+           includeMarkdown("./md/intro.md")),
 
 # visualisation of visits mapped on to interactive map
   tabPanel("Map", hr(), leafletOutput("map"), hr()),

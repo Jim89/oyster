@@ -100,13 +100,13 @@
 # reshape the data
   vistited <- combined %>%
               select(from, from.long, from.lat) %>%
-              setNames(c("station", "long", "lat")) %>%
+              setNames(c("station", "longitude", "latitude")) %>%
               rbind(combined %>%
                       select(to, to.long, to.lat) %>%
-                      setNames(c("station", "long", "lat"))) %>%
-              group_by(station, long, lat) %>%
+                      setNames(c("station", "longitude", "latitude"))) %>%
+              group_by(station, longitude, latitude) %>%
               summarise(visits = n()) %>%
-              filter(!is.na((long)))
+              filter(!is.na((longitude)))
 
 # create pop-up text
   popup <- paste0("<strong> Station: </strong>",
