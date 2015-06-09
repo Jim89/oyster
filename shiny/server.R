@@ -20,8 +20,8 @@
 # set up some colours to use
   districtLine <- col2rgb("#007229")
   jubileeLine <- col2rgb("#868f98")
-  kpmgDarkBlue <- rgb(red = 0, green = 51, blue = 141, maxColorValue = 255)
-  kpmgPurple <- rgb(red = 142, green = 37, blue = 141, maxColorValue = 255)
+  DarkBlue <- rgb(red = 0, green = 51, blue = 141, maxColorValue = 255)
+  Purple <- rgb(red = 142, green = 37, blue = 141, maxColorValue = 255)
   lightGrey <- rgb(red = 186, green = 187, blue = 188, maxColorValue = 255)
 
 # create function for plotting the histogram
@@ -37,7 +37,7 @@
                                        as.numeric() %>%
                                        max(na.rm = T) + 5,
                                   by = 5)) +
-  scale_fill_manual(values = rep(kpmgDarkBlue, 2), guide = F) +
+  scale_fill_manual(values = rep(DarkBlue, 2), guide = F) +
   xlab("Journey time / minutes") +
   theme(axis.title.y = element_blank(),
         axis.ticks.y = element_blank(),
@@ -71,13 +71,13 @@
              str_extract("[0-9][0-9]:[0-9][0-9]:[0-9][0-9]")) %>%
   # make the plot itself
     ggplot(aes(x = start.time.clean, y = journey.time, group = 1)) +
-  #  geom_line(colour = kpmgDarkBlue) +
-    geom_point(aes(size = journeys), colour = kpmgDarkBlue, alpha = 0.8) +
+  #  geom_line(colour = DarkBlue) +
+    geom_point(aes(size = journeys), colour = DarkBlue, alpha = 0.8) +
     scale_size(name = "Number of\nJourneys", range = c(0, 10)) +
     xlab("Departure Time") +
     ylab("Average Journey Time / minutes") +
     #  geom_smooth(method = "lm", alpha = 0.075) +
-#   geom_smooth(method = "loess", size = 0.5, colour = kpmgPurple, alpha = 0.25) +
+#   geom_smooth(method = "loess", size = 0.5, colour = Purple, alpha = 0.25) +
     theme(legend.position = "bottom",
           axis.text.x = element_text(angle = 90),
           axis.text.y = element_text(size = 12),
@@ -133,7 +133,7 @@ shinyServer( function(input, output) {
                                   options = providerTileOptions(noWrap = TRUE)) %>%
                 setView(lng = -0.1275, lat = 51.5072, zoom = 13) %>%
                 addCircles(radius = ~2.2*visits, popup = popup, stroke = T,
-                           fillColor = kpmgDarkBlue,
+                           fillColor = DarkBlue,
                            fillOpacity = 0.75)  })
   # create the data to provide
   output$data <- renderDataTable({combined[ ,c(1:5, 8)] %>%
@@ -154,7 +154,7 @@ shinyServer( function(input, output) {
             CommutePlot(combined, start, end, 2) +
             geom_smooth(method = "loess",
                         size = 0.5,
-                        colour = kpmgPurple,
+                        colour = Purple,
                         alpha = 0.25)
           } else {
             CommutePlot(combined, start, end, 2)
@@ -167,7 +167,7 @@ shinyServer( function(input, output) {
             CommutePlot(combined, start, end, 2) +
             geom_smooth(method = "loess",
                         size = 0.5,
-                        colour = kpmgPurple,
+                        colour = Purple,
                         alpha = 0.25)
           } else {
             CommutePlot(combined, start, end, 2)
