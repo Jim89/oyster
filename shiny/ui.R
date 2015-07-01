@@ -98,7 +98,11 @@
                     Filter, sort and search. If you'd like to know more, get in
                     touch with the app creator via",
                     span(tags$a(href="https://twitter.com/leach_jim", "twitter.")))),
-           column(10, dataTableOutput("data", height = "100%")))
+           column(10, dataTableOutput("data", height = "100%"))),
+
+# circos plot
+  tabPanel("Circos Plot",
+           plotOutput("circos", height = 750, width = 750))
 
 # close the UI definition
 ))
