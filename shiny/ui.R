@@ -102,7 +102,14 @@
 
 # circos plot
   tabPanel("Circos Plot",
-           plotOutput("circos", height = 750, width = 750))
+           sidebarPanel(width = 3,
+                    h4("Most Popular Journeys"),
+                    helpText("Choose how many of the most popular journeys you'd like to see the diagram for"),
+                    radioButtons("journeys", NULL,
+                                  c("5" = "5",
+                                    "10" = "10",
+                                    "15" = "15"))),
+           mainPanel(plotOutput("circos", height = 750, width = 750)))
 
 # close the UI definition
 ))

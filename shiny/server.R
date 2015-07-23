@@ -273,6 +273,6 @@ shinyServer( function(input, output) {
    })
 
   # create the circos plot
-    output$circos <- renderPlot({createChordPlot(combined, 10)})
+    output$circos <- renderPlot({reactive(createChordPlot(combined, input$journeys))})
 
 })
