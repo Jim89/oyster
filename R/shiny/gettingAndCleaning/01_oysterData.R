@@ -63,7 +63,7 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
 # set names to lowercase because I'm lazy
   names(oyster) %<>% tolower
 
-# Oyster Data ------------------------------------------------------------------
+# strip out guff and clean times -----------------------------------------------
 # find records where something went awry in the journey
   badRecords <- "touch-in|Topped-up|touch-out|Season ticket|Bus journey|Topped up|Entered and exited|Unspecified location"
 
@@ -91,7 +91,9 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
          start.day = wday(start.datetime, label = T),
          weekend = ifelse(start.day %in% c("Sat", "Sun"), "Weekend", "Weekday")
          )
-
+  
+  
+# get journey station information ----------------------------------------------
 # split up the journey in to "to" and "from"
   toFrom <- str_split(oyster$journey.action, " to")
 
