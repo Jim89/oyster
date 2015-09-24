@@ -29,7 +29,7 @@
           absolutePanel(id = "description",
                         class = "panel panel-default",
                         fixed = T,
-                        draggable = F,
+                        draggable = T,
                         top = 90,
                         left = "auto",
                         right = 20,
