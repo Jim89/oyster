@@ -1,0 +1,16 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+05-Sep-2015,13:35,14:35,"Whitechapel to Richmond",2.80,,11.60,""
+04-Sep-2015,13:24,13:39,"Canary Wharf [London Underground] to Whitechapel",1.50,,14.40,""
+04-Sep-2015,07:15,08:24,"Richmond to Canary Wharf [London Underground]",3.90,,15.90,""
+04-Sep-2015,07:14,,"Topped up,  ",,20.00,19.80,""
+03-Sep-2015,09:07,10:14,"Whitechapel to Richmond",3.90,,-0.20,""
+02-Sep-2015,22:08,22:17,"Mile End to Whitechapel",0.80,,3.70,"The fare for this journey was capped as you reached the daily charging limit for the zones used"
+02-Sep-2015,20:27,,"Bus journey, route D6",1.50,,4.50,""
+02-Sep-2015,19:57,,"Bus journey, route D6",1.50,,6.00,""
+02-Sep-2015,19:39,19:46,"Whitechapel to Mile End",1.50,,7.50,""
+02-Sep-2015,17:04,18:03,"Richmond to Whitechapel",3.90,,9.00,""
+01-Sep-2015,19:51,20:33,"Embankment to Richmond",2.70,,12.90,"The fare for this journey was capped as you reached the daily charging limit for the zones used"
+01-Sep-2015,13:02,13:21,"Canary Wharf [London Underground] to Green Park",2.30,,15.60,""
+01-Sep-2015,10:44,11:28,"Richmond to Canary Wharf [London Underground]",4.20,,17.90,""
+01-Sep-2015,10:44,,"Topped up,  ",,20.00,22.10,""
