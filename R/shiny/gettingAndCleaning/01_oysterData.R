@@ -4,7 +4,7 @@ files <-
   list.files("./data",recursive = T) %>% as.list %>% paste0("./data/", .)
 
 # remove the stations data (otherwise it'll throw an error) --------------------
-files <- files[-grep("stations", files)]
+files <- files[-grep("stations|oyster_all", files)]
 
 # read in the data -------------------------------------------------------------
 oyster <-

@@ -1,0 +1,738 @@
+"Date","Start.Time","End.Time","Journey.Action","Charge","Credit","Balance","Note"
+"13-Feb-2015","21:43","22:12","South Kensington to Richmond",0,NA,5.1,NA
+"13-Feb-2015","18:18","18:47","Canary Wharf [London Underground] to South Kensington",0,NA,5.1,NA
+"13-Feb-2015","07:14","08:03","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"12-Feb-2015","17:47","18:36","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"12-Feb-2015","07:04","07:52","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"11-Feb-2015","21:44","22:20","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"11-Feb-2015","07:14","08:06","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"10-Feb-2015","17:39","18:22","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"10-Feb-2015","07:15","08:04","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"09-Feb-2015","17:25","18:08","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"09-Feb-2015","07:14","08:11","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"09-Feb-2015","07:13","","Season ticket bought",0,NA,5.1,NA
+"27-Jul-2014","18:34","19:21","Kings Cross [London Underground / National Rail] to Richmond",0,NA,5.55,""
+"25-Jul-2014","16:59","17:23","Canary Wharf [London Underground] to Kings Cross [London Underground / National Rail]",0,NA,5.55,""
+"25-Jul-2014","07:46","08:40","Richmond to Canary Wharf [London Underground]",0,NA,5.55,""
+"24-Jul-2014","16:56","17:36","Bank to Richmond",0,NA,5.55,""
+"24-Jul-2014","","16:35","[No touch-in] to Bank",0,NA,5.55,"We are not able to show where you touched in during this journey"
+"24-Jul-2014","08:21","","Topped-up on touch in, Canary Wharf [London Underground]",NA,2.6,5.55,""
+"24-Jul-2014","07:38","08:21","Richmond to Canary Wharf [London Underground]",0,NA,5.55,""
+"23-Jul-2014","17:09","17:53","Canary Wharf [London Underground] to Richmond",0,NA,2.95,""
+"23-Jul-2014","07:39","08:19","Richmond to Canary Wharf [London Underground]",0,NA,2.95,""
+"03-Aug-2014","14:39","15:12","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,1.85,""
+"03-Aug-2014","13:14","13:28","South Kensington to Embankment",0,NA,1.85,""
+"03-Aug-2014","11:15","11:51","Richmond to South Kensington",0,NA,1.85,""
+"02-Aug-2014","23:03","23:36","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,1.85,""
+"02-Aug-2014","17:30","18:02","Richmond to Waterloo (platforms 12-19) [National Rail]",0,NA,1.85,""
+"01-Aug-2014","23:50","00:33","Leicester Square to Richmond",0,NA,1.85,""
+"01-Aug-2014","18:27","19:08","Richmond to Oxford Circus",0,NA,1.85,""
+"01-Aug-2014","12:51","13:39","Canary Wharf [London Underground] to Richmond",0,NA,1.85,""
+"01-Aug-2014","08:12","08:34","Kennington to Canary Wharf [London Underground]",0,NA,1.85,""
+"31-Jul-2014","19:26","19:46","Richmond to Vauxhall [National Rail]",0,NA,1.85,""
+"31-Jul-2014","16:09","16:49","Canary Wharf [London Underground] to Richmond",0,NA,1.85,""
+"31-Jul-2014","07:38","08:20","Richmond to Canary Wharf [London Underground]",0,NA,1.85,""
+"30-Jul-2014","16:51","17:33","Canary Wharf [London Underground] to Richmond",0,NA,1.85,""
+"30-Jul-2014","07:39","08:33","Richmond to Canary Wharf [London Underground]",0,NA,1.85,""
+"29-Jul-2014","16:45","17:23","Canary Wharf [London Underground] to Richmond",0,NA,1.85,""
+"29-Jul-2014","","10:49","[No touch-in] to Blackfriars [London Underground]",0,NA,1.85,"We are not able to show where you touched in during this journey"
+"29-Jul-2014","07:36","08:14","Richmond to Canary Wharf [London Underground]",0,NA,1.85,""
+"28-Jul-2014","16:38","17:17","Canary Wharf [London Underground] to Richmond",0,NA,1.85,""
+"28-Jul-2014","11:18","","Liverpool Street [London Underground] to [No touch-out]",0,NA,1.85,"We are not able to show where you touched out during this journey"
+"28-Jul-2014","10:08","10:23","Canary Wharf DLR to Bank",0,NA,1.85,""
+"28-Jul-2014","08:06","","Season ticket bought, Waterloo (Jubilee line entrance)",0,NA,1.85,""
+"28-Jul-2014","07:44","08:22","Richmond to Canary Wharf [London Underground]",3.7,NA,1.85,"You have been charged for travelling in zones not covered by your Travelcard."
+"09-Aug-2014","23:27","00:18","Kings Cross [London Underground / National Rail] to Richmond",2.7,NA,7.05,""
+"09-Aug-2014","17:09","17:57","Richmond to Angel",4.1,NA,9.75,""
+"08-Aug-2014","20:19","20:59","Leicester Square to Richmond",2.7,NA,13.85,""
+"08-Aug-2014","17:11","17:27","Canary Wharf [London Underground] to Waterloo (Jubilee line entrance)",2.2,NA,16.55,""
+"08-Aug-2014","07:29","08:18","Richmond to Canary Wharf [London Underground]",5.3,NA,18.75,""
+"08-Aug-2014","07:29","","Topped up,  ",NA,20,24.05,""
+"06-Aug-2014","22:02","22:38","Old Street to Richmond",0.7,NA,4.05,"The fare for this journey was capped as you reached the daily charging limit for the zones used"
+"06-Aug-2014","22:02","","Topped up, Old Street",NA,5,4.75,""
+"06-Aug-2014","17:09","","Bus journey, route 135",1.45,NA,-0.25,""
+"06-Aug-2014","15:40","","Bus journey, route D7",1.45,NA,1.2,""
+"06-Aug-2014","15:04","","Liverpool Street [London Underground] to [No touch-out]",5.1,NA,2.65,"We are not able to show where you touched out during this journey"
+"06-Aug-2014","14:03","14:40","Richmond to Bank",4.1,NA,7.75,""
+"06-Aug-2014","14:03","","Topped up,  ",NA,10,11.85,""
+"16-Aug-2014","22:00","22:02","Entered and exited Richmond",0,NA,7.05,NA
+"16-Aug-2014","17:58","18:04","Kew Gardens to Richmond",0,NA,7.05,NA
+"16-Aug-2014","14:27","14:32","Richmond to Kew Gardens",0,NA,7.05,NA
+"16-Aug-2014","13:13","13:14","Entered and exited Richmond",0,NA,7.05,NA
+"15-Aug-2014","18:01","18:55","Canary Wharf [London Underground] to Richmond",0,NA,7.05,NA
+"15-Aug-2014","14:20","15:04","Richmond to Canary Wharf [London Underground]",0,NA,7.05,NA
+"15-Aug-2014","08:17","08:49","Kennington to Richmond",0,NA,7.05,NA
+"14-Aug-2014","20:00","20:29","Richmond to Vauxhall [National Rail]",0,NA,7.05,NA
+"13-Aug-2014","15:06","15:49","Canary Wharf [London Underground] to Richmond",0,NA,7.05,NA
+"13-Aug-2014","08:19","","Bus journey, route D3",0,NA,7.05,NA
+"12-Aug-2014","18:59","","Bus journey, route D3",0,NA,7.05,NA
+"12-Aug-2014","07:40","08:20","Richmond to Canary Wharf [London Underground]",0,NA,7.05,NA
+"11-Aug-2014","16:45","17:23","Canary Wharf [London Underground] to Richmond",0,NA,7.05,NA
+"11-Aug-2014","07:35","08:17","Richmond to Canary Wharf [London Underground]",0,NA,7.05,NA
+"11-Aug-2014","07:34","","Season ticket bought",0,NA,7.05,NA
+"23-Aug-2014","08:27","09:05","Richmond to Kings Cross [London Underground / National Rail]",0,NA,7.05,NA
+"21-Aug-2014","13:27","14:10","Canary Wharf [London Underground] to Richmond",0,NA,7.05,NA
+"21-Aug-2014","07:33","08:12","Richmond to Canary Wharf [London Underground]",0,NA,7.05,NA
+"20-Aug-2014","22:17","22:36","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,7.05,NA
+"20-Aug-2014","18:12","18:42","Canary Wharf [London Underground] to Warren Street",0,NA,7.05,NA
+"20-Aug-2014","07:33","08:14","Richmond to Canary Wharf [London Underground]",0,NA,7.05,NA
+"19-Aug-2014","16:35","17:18","Canary Wharf [London Underground] to Richmond",0,NA,7.05,NA
+"19-Aug-2014","07:36","08:12","Richmond to Canary Wharf [London Underground]",0,NA,7.05,NA
+"18-Aug-2014","16:45","17:34","Canary Wharf [London Underground] to Richmond",0,NA,7.05,NA
+"18-Aug-2014","07:30","08:17","Richmond to Canary Wharf [London Underground]",0,NA,7.05,NA
+"18-Aug-2014","07:30","","Season ticket bought",0,NA,7.05,NA
+"31-Aug-2014","13:52","14:28","Kings Cross [London Underground / National Rail] to Richmond",4.1,NA,2.95,NA
+"07-Sep-2014","18:19","19:01","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,2.95,NA
+"07-Sep-2014","17:34","","Season ticket bought, Waterloo [London Underground / National Rail]",0,NA,2.95,NA
+"07-Sep-2014","17:09","17:34","Liverpool Street [London Underground] to Waterloo [London Underground / National Rail]",0,NA,2.95,NA
+"05-Sep-2014","16:39","17:08","Richmond to Bank",0,NA,2.95,NA
+"05-Sep-2014","16:33","16:37","Entered and exited Richmond",0,NA,2.95,NA
+"04-Sep-2014","16:08","16:48","Canary Wharf [London Underground] to Richmond",0,NA,2.95,NA
+"04-Sep-2014","07:36","08:12","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"03-Sep-2014","17:39","18:18","Canary Wharf [London Underground] to Richmond",0,NA,2.95,NA
+"03-Sep-2014","07:38","08:21","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"02-Sep-2014","16:59","17:38","Canary Wharf [London Underground] to Richmond",0,NA,2.95,NA
+"02-Sep-2014","07:40","08:19","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"01-Sep-2014","17:13","17:53","Canary Wharf [London Underground] to Richmond",0,NA,2.95,NA
+"01-Sep-2014","07:37","08:12","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"01-Sep-2014","07:36","","Season ticket bought",0,NA,2.95,NA
+"14-Sep-2014","18:00","18:43","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,2.95,NA
+"14-Sep-2014","13:20","14:00","Richmond to Covent Garden",0,NA,2.95,NA
+"14-Sep-2014","13:19","","Season ticket bought",0,NA,2.95,NA
+"13-Sep-2014","19:11","19:43","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,2.95,NA
+"13-Sep-2014","13:15","14:02","Richmond to Bermondsey",0,NA,2.95,NA
+"10-Sep-2014","17:09","17:48","Canary Wharf [London Underground] to Richmond",0,NA,2.95,NA
+"10-Sep-2014","07:33","08:12","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"09-Sep-2014","17:18","17:53","Canary Wharf [London Underground] to Richmond",0,NA,2.95,NA
+"09-Sep-2014","07:35","08:14","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"08-Sep-2014","16:43","17:23","Canary Wharf [London Underground] to Richmond",0,NA,2.95,NA
+"08-Sep-2014","07:32","08:12","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"21-Sep-2014","12:39","","Bus journey, route D3",0,NA,2.95,NA
+"21-Sep-2014","11:23","12:17","Richmond to Canary Wharf [London Underground]",0,NA,2.95,NA
+"20-Sep-2014","21:01","21:35","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,2.95,NA
+"20-Sep-2014","17:18","17:30","Kings Cross [London Underground / National Rail] to Leicester Square",0,NA,2.95,NA
+"20-Sep-2014","15:52","16:46","Richmond to Kings Cross [London Underground / National Rail]",0,NA,2.95,NA
+"19-Sep-2014","23:35","00:15","South Kensington to Richmond",0,NA,2.95,NA
+"19-Sep-2014","18:08","18:37","Richmond to South Kensington",0,NA,2.95,NA
+"17-Sep-2014","21:49","22:29","London Bridge [London Underground] to Richmond",0,NA,2.95,NA
+"17-Sep-2014","07:36","07:58","Richmond to Waterloo (platforms 12-19) [National Rail]",0,NA,2.95,NA
+"16-Sep-2014","18:15","18:36","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,2.95,NA
+"16-Sep-2014","07:35","08:21","Richmond to London Bridge [London Underground]",0,NA,2.95,NA
+"28-Sep-2014","16:44","18:03","Mornington Crescent to Richmond",0,NA,11.2,NA
+"28-Sep-2014","13:22","14:21","Richmond to Camden Town",0,NA,11.2,NA
+"27-Sep-2014","20:34","21:19","Kings Cross (Piccadilly, Victoria lines) to Richmond",0,NA,11.2,NA
+"27-Sep-2014","14:44","15:27","Richmond to Euston [London Underground]",0,NA,11.2,NA
+"27-Sep-2014","12:31","12:32","Entered and exited Richmond",0,NA,11.2,NA
+"25-Sep-2014","16:33","17:07","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"25-Sep-2014","07:37","08:20","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"24-Sep-2014","21:26","22:05","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"24-Sep-2014","19:24","19:47","North Greenwich to Canary Wharf [London Underground]",0,NA,11.2,NA
+"24-Sep-2014","07:33","08:18","Richmond to North Greenwich",0,NA,11.2,NA
+"24-Sep-2014","07:33","","Season ticket bought",0,NA,11.2,NA
+"22-Sep-2014","07:41","08:26","Canary Wharf [London Underground] to Richmond",5.3,NA,11.2,NA
+"22-Sep-2014","07:40","","Topped up, Canary Wharf [London Underground]",NA,15,16.5,NA
+"22-Sep-2014","07:30","","Bus journey, route D3",1.45,NA,1.5,NA
+"04-Oct-2014","16:41","17:13","Vauxhall [National Rail] to Richmond",0,NA,11.2,""
+"04-Oct-2014","13:05","13:51","Richmond to Pimlico",0,NA,11.2,""
+"03-Oct-2014","22:53","23:33","Ladbroke Grove to Richmond",0,NA,11.2,""
+"03-Oct-2014","19:06","19:45","Richmond to Ladbroke Grove",0,NA,11.2,""
+"03-Oct-2014","","13:36","[No touch-in] to Richmond",0,NA,11.2,"We are not able to show where you touched in during this journey"
+"03-Oct-2014","12:54","13:08","Canary Wharf [London Underground] to Waterloo (platforms 12-19) [National Rail]",0,NA,11.2,""
+"03-Oct-2014","07:24","08:04","Richmond to Canary Wharf [London Underground]",0,NA,11.2,""
+"02-Oct-2014","17:15","17:53","Canary Wharf [London Underground] to Richmond",0,NA,11.2,""
+"02-Oct-2014","07:26","08:10","Richmond to Canary Wharf [London Underground]",0,NA,11.2,""
+"01-Oct-2014","20:16","20:16","Entered and exited Waterloo (platforms 12-19) [National Rail]",0,NA,11.2,""
+"01-Oct-2014","16:42","17:06","Canary Wharf [London Underground] to Goodge Street",0,NA,11.2,""
+"01-Oct-2014","07:19","08:07","Richmond to Canary Wharf [London Underground]",0,NA,11.2,""
+"01-Oct-2014","07:18","","Season ticket bought",0,NA,11.2,""
+"30-Sep-2014","16:15","16:53","Canary Wharf [London Underground] to Richmond",0,NA,11.2,""
+"30-Sep-2014","07:20","08:08","Richmond to Canary Wharf [London Underground]",0,NA,11.2,""
+"29-Sep-2014","18:17","18:56","Canary Wharf [London Underground] to Richmond",0,NA,11.2,""
+"29-Sep-2014","10:11","10:49","Richmond to Canary Wharf [London Underground]",0,NA,11.2,""
+"10-Oct-2014","21:55","22:18","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,11.2,NA
+"10-Oct-2014","17:50","18:06","Canary Wharf [London Underground] to Waterloo (Jubilee line entrance)",0,NA,11.2,NA
+"10-Oct-2014","07:23","08:09","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"09-Oct-2014","15:38","16:18","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"09-Oct-2014","07:24","08:09","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"08-Oct-2014","21:30","22:09","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"08-Oct-2014","10:42","10:55","Bank to Canary Wharf DLR",0,NA,11.2,NA
+"08-Oct-2014","08:59","09:42","Richmond to Bank",0,NA,11.2,NA
+"08-Oct-2014","08:59","","Season ticket bought",0,NA,11.2,NA
+"06-Oct-2014","16:55","17:34","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"06-Oct-2014","07:23","08:32","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"18-Oct-2014","22:43","23:21","Warren Street to Richmond",0,NA,11.2,NA
+"18-Oct-2014","19:27","","Bus journey, route 91",0,NA,11.2,NA
+"18-Oct-2014","16:24","17:14","Richmond to Caledonian Road and Barnsbury",0,NA,11.2,NA
+"17-Oct-2014","22:37","23:29","West Hampstead [London Underground] to Richmond",0,NA,11.2,NA
+"17-Oct-2014","18:16","18:45","Canary Wharf [London Underground] to West Hampstead [London Underground]",0,NA,11.2,NA
+"17-Oct-2014","07:22","08:06","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"16-Oct-2014","18:18","18:53","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"16-Oct-2014","07:15","08:06","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"15-Oct-2014","17:26","18:08","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"15-Oct-2014","07:18","08:03","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"15-Oct-2014","07:17","","Season ticket bought",0,NA,11.2,NA
+"14-Oct-2014","18:21","19:04","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"14-Oct-2014","07:20","08:06","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"13-Oct-2014","18:19","19:05","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"13-Oct-2014","07:16","08:12","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"26-Oct-2014","23:46","","Bus journey, route 135",0,NA,11.2,NA
+"26-Oct-2014","23:10","23:37","Tottenham Court Road to Canary Wharf [London Underground]",0,NA,11.2,NA
+"26-Oct-2014","20:32","20:55","Canary Wharf [London Underground] to Tottenham Court Road",0,NA,11.2,NA
+"26-Oct-2014","20:20","","Bus journey, route D7",0,NA,11.2,NA
+"26-Oct-2014","16:22","17:00","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"25-Oct-2014","21:50","22:18","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,11.2,NA
+"25-Oct-2014","20:44","21:31","Catford Bridge [National Rail] to Charing Cross [National Rail]",0,NA,11.2,NA
+"25-Oct-2014","13:04","14:37","Richmond to Catford Bridge [National Rail]",0,NA,11.2,NA
+"24-Oct-2014","18:03","18:49","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"24-Oct-2014","06:52","07:37","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"23-Oct-2014","17:55","18:40","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"23-Oct-2014","06:49","07:38","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"22-Oct-2014","18:33","19:20","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"22-Oct-2014","07:00","07:50","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"22-Oct-2014","06:59","","Season ticket bought",0,NA,11.2,NA
+"21-Oct-2014","21:11","21:35","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,11.2,NA
+"21-Oct-2014","18:26","18:46","Canary Wharf [London Underground] to Charing Cross [London Underground]",0,NA,11.2,NA
+"21-Oct-2014","06:56","07:40","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"20-Oct-2014","15:13","15:51","Oxford Circus to Richmond",0,NA,11.2,NA
+"20-Oct-2014","13:59","14:41","Richmond to Oxford Circus",0,NA,11.2,NA
+"20-Oct-2014","12:51","13:37","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"20-Oct-2014","07:01","07:48","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"31-Oct-2014","17:24","18:04","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"31-Oct-2014","07:18","08:08","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"30-Oct-2014","17:38","18:10","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,11.2,NA
+"30-Oct-2014","17:18","17:37","Canary Wharf [London Underground] to Waterloo (platforms 12-19) [National Rail]",0,NA,11.2,NA
+"30-Oct-2014","07:23","08:05","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"29-Oct-2014","17:43","18:25","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"29-Oct-2014","07:20","08:09","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"29-Oct-2014","07:20","","Season ticket bought",0,NA,11.2,NA
+"28-Oct-2014","17:17","17:53","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"28-Oct-2014","07:25","08:06","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"27-Oct-2014","18:00","18:39","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"07-Nov-2014","17:43","18:29","Canary Wharf [London Underground] to Richmond",5.3,NA,2,""
+"07-Nov-2014","08:05","08:05","[Unspecified location] to Canary Wharf [London Underground]",1.6,NA,7.3,"We have recorded a touch in for this journey but are unable to show the location."
+"07-Nov-2014","07:18","07:49","Richmond to Waterloo (platforms 12-19) [National Rail]",3.7,NA,8.9,""
+"06-Nov-2014","19:42","20:55","Canary Wharf DLR to Richmond",2.7,NA,12.6,""
+"06-Nov-2014","07:59","07:59","[Unspecified location] to Canary Wharf [London Underground]",1.6,NA,15.3,"We have recorded a touch in for this journey but are unable to show the location."
+"06-Nov-2014","07:12","07:41","Richmond to Waterloo (platforms 12-19) [National Rail]",3.7,NA,16.9,""
+"05-Nov-2014","17:35","18:23","Canary Wharf [London Underground] to Richmond",5.3,NA,20.6,""
+"05-Nov-2014","07:12","07:56","Richmond to Canary Wharf [London Underground]",5.3,NA,25.9,""
+"05-Nov-2014","07:11","","Topped up,  ",NA,20,31.2,""
+"04-Nov-2014","07:11","07:52","Richmond to Canary Wharf [London Underground]",0,NA,11.2,""
+"03-Nov-2014","18:01","19:15","Canary Wharf [London Underground] to Richmond",0,NA,11.2,""
+"03-Nov-2014","07:14","08:02","Richmond to Canary Wharf [London Underground]",0,NA,11.2,""
+"14-Dec-2014","20:46","","Bus journey, route 391",0,NA,2,NA
+"14-Dec-2014","19:43","20:44","High Street Kensington to Gunnersbury",0,NA,11.2,NA
+"14-Dec-2014","17:05","","Bus journey, route 9",0,NA,2,NA
+"14-Dec-2014","13:56","14:33","Richmond to Hyde Park Corner",0,NA,11.2,NA
+"13-Dec-2014","16:17","16:23","Kew Gardens to Richmond",0,NA,11.2,NA
+"13-Dec-2014","13:51","13:58","Richmond to Kew Gardens",0,NA,11.2,NA
+"12-Dec-2014","18:52","19:20","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,11.2,NA
+"12-Dec-2014","17:38","17:54","Canary Wharf [London Underground] to Waterloo (Jubilee line entrance)",0,NA,11.2,NA
+"12-Dec-2014","07:33","08:19","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"11-Dec-2014","17:56","18:42","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"11-Dec-2014","07:26","08:09","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"10-Dec-2014","18:04","18:39","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"10-Dec-2014","07:27","08:24","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"09-Dec-2014","17:42","18:24","Canary Wharf [London Underground] to Richmond",0,NA,11.2,NA
+"09-Dec-2014","07:33","08:19","Richmond to Canary Wharf [London Underground]",0,NA,11.2,NA
+"09-Dec-2014","07:13","","Season ticket bought",0,NA,11.2,NA
+"21-Dec-2014","22:11","22:27","Canary Wharf [London Underground] to Waterloo [London Underground / National Rail]",0,NA,2,NA
+"21-Dec-2014","22:03","","Bus journey, route D3",0,NA,2,NA
+"21-Dec-2014","14:56","","Bus journey, route D7",0,NA,2,NA
+"21-Dec-2014","13:56","14:47","Richmond to Canary Wharf [London Underground]",0,NA,2,NA
+"20-Dec-2014","22:50","23:29","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,2,NA
+"20-Dec-2014","19:13","19:49","Richmond to Tottenham Court Road",0,NA,2,NA
+"20-Dec-2014","13:53","14:29","Warren Street to Richmond",0,NA,2,NA
+"20-Dec-2014","11:11","11:48","Richmond to Goodge Street",0,NA,2,NA
+"19-Dec-2014","21:41","22:06","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,2,NA
+"19-Dec-2014","16:30","16:49","Canary Wharf [London Underground] to Green Park",0,NA,2,NA
+"19-Dec-2014","07:27","08:08","Richmond to Canary Wharf [London Underground]",0,NA,2,NA
+"18-Dec-2014","18:13","19:06","Canary Wharf [London Underground] to Richmond",0,NA,2,NA
+"18-Dec-2014","07:23","08:05","Richmond to Canary Wharf [London Underground]",0,NA,2,NA
+"17-Dec-2014","17:39","18:23","Canary Wharf [London Underground] to Richmond",0,NA,2,NA
+"17-Dec-2014","07:24","08:02","Richmond to Canary Wharf [London Underground]",0,NA,2,NA
+"16-Dec-2014","17:42","18:23","Canary Wharf [London Underground] to Richmond",0,NA,2,NA
+"16-Dec-2014","07:18","07:56","Richmond to Canary Wharf [London Underground]",0,NA,2,NA
+"15-Dec-2014","17:53","18:40","Canary Wharf [London Underground] to Richmond",0,NA,2,NA
+"15-Dec-2014","07:17","08:03","Richmond to Canary Wharf [London Underground]",0,NA,2,NA
+"15-Dec-2014","07:17","","Season ticket bought",0,NA,2,NA
+"28-Dec-2014","13:26","14:12","Richmond to Kings Cross [London Underground / National Rail]",4.1,NA,10.8,""
+"27-Dec-2014","16:33","16:59","Vauxhall [National Rail] to Richmond",2,NA,14.9,""
+"27-Dec-2014","16:32","","Topped up,  ",NA,20,16.9,""
+"27-Dec-2014","","16:31","[No touch-in] to Vauxhall [London Underground]",5.1,NA,-3.1,"We are not able to show where you touched in during this journey"
+"22-Dec-2014","12:53","13:33","Richmond to Kings Cross [London Underground / National Rail]",0,NA,2,""
+"03-Jan-2015","19:30","20:16","Euston [London Underground] to Richmond",4.2,NA,6.6,NA
+"10-Jan-2015","23:53","00:24","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.6,NA
+"10-Jan-2015","19:18","19:49","Richmond to Waterloo (platforms 12-19) [National Rail]",0,NA,6.6,NA
+"09-Jan-2015","17:32","18:19","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"09-Jan-2015","07:17","08:06","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"08-Jan-2015","21:06","21:47","Green Park to Richmond",0,NA,6.6,NA
+"08-Jan-2015","17:35","17:56","Canary Wharf [London Underground] to Green Park",0,NA,6.6,NA
+"08-Jan-2015","07:20","08:13","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"07-Jan-2015","17:27","18:07","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"07-Jan-2015","07:22","08:06","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"06-Jan-2015","17:43","18:24","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"06-Jan-2015","07:19","08:00","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"05-Jan-2015","17:27","18:07","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"05-Jan-2015","07:20","08:06","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"05-Jan-2015","07:20","","Season ticket bought",0,NA,6.6,NA
+"17-Jan-2015","16:50","17:29","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.6,NA
+"17-Jan-2015","12:53","13:39","Richmond to Green Park",0,NA,6.6,NA
+"16-Jan-2015","21:18","21:42","Earls Court to Richmond",0,NA,6.6,NA
+"16-Jan-2015","19:03","19:35","Canary Wharf [London Underground] to High Street Kensington",0,NA,6.6,NA
+"16-Jan-2015","07:20","08:11","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"15-Jan-2015","17:45","18:45","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"15-Jan-2015","07:22","08:10","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"14-Jan-2015","17:37","18:23","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"14-Jan-2015","07:17","08:11","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"13-Jan-2015","17:48","19:02","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"13-Jan-2015","07:23","08:06","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"12-Jan-2015","17:31","18:07","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"12-Jan-2015","07:20","08:05","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"12-Jan-2015","07:20","","Season ticket bought",0,NA,6.6,NA
+"25-Jan-2015","16:07","16:31","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.6,NA
+"25-Jan-2015","13:34","13:56","Richmond to Waterloo (platforms 12-19) [National Rail]",0,NA,6.6,NA
+"23-Jan-2015","17:36","18:23","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"23-Jan-2015","07:18","08:06","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"22-Jan-2015","21:12","21:40","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.6,NA
+"22-Jan-2015","17:17","17:44","Canary Wharf [London Underground] to Warren Street",0,NA,6.6,NA
+"22-Jan-2015","07:18","08:02","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"21-Jan-2015","17:37","18:20","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"21-Jan-2015","07:24","08:09","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"20-Jan-2015","17:24","18:28","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"20-Jan-2015","07:18","08:08","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"19-Jan-2015","17:35","18:21","Canary Wharf [London Underground] to Richmond",0,NA,6.6,NA
+"19-Jan-2015","07:17","08:11","Richmond to Canary Wharf [London Underground]",0,NA,6.6,NA
+"19-Jan-2015","07:17","","Season ticket bought",0,NA,6.6,NA
+"31-Jan-2015","22:22","","Bus journey, route 65",0,NA,5.1,""
+"31-Jan-2015","19:14","","Bus journey, route 371",0,NA,5.1,""
+"31-Jan-2015","12:47","","Bus journey, route H37",0,NA,5.1,""
+"31-Jan-2015","12:28","12:43","Heathrow Terminals 123 [London Underground] to Hounslow East",1.5,NA,5.1,"You have been charged for travelling in zones not covered by your Travelcard."
+"30-Jan-2015","17:14","17:53","Canary Wharf [London Underground] to Richmond",0,NA,6.6,""
+"30-Jan-2015","07:22","08:07","Richmond to Canary Wharf [London Underground]",0,NA,6.6,""
+"29-Jan-2015","23:30","00:03","South Kensington to Richmond",0,NA,6.6,""
+"29-Jan-2015","20:57","21:40","Ladbroke Grove to South Kensington",0,NA,6.6,""
+"29-Jan-2015","18:34","19:05","Waterloo [London Underground / National Rail] to Ladbroke Grove",0,NA,6.6,""
+"29-Jan-2015","17:29","17:50","Canary Wharf [London Underground] to Waterloo [London Underground / National Rail]",0,NA,6.6,""
+"29-Jan-2015","07:18","08:09","Richmond to Canary Wharf [London Underground]",0,NA,6.6,""
+"28-Jan-2015","19:47","20:27","South Kensington to Richmond",0,NA,6.6,""
+"28-Jan-2015","17:30","17:59","Canary Wharf [London Underground] to South Kensington",0,NA,6.6,""
+"28-Jan-2015","07:18","08:15","Richmond to Canary Wharf [London Underground]",0,NA,6.6,""
+"27-Jan-2015","19:54","20:36","Canary Wharf [London Underground] to Richmond",0,NA,6.6,""
+"27-Jan-2015","07:15","08:09","Richmond to Canary Wharf [London Underground]",0,NA,6.6,""
+"26-Jan-2015","17:32","18:19","Canary Wharf [London Underground] to Richmond",0,NA,6.6,""
+"26-Jan-2015","07:19","08:09","Richmond to Canary Wharf [London Underground]",0,NA,6.6,""
+"26-Jan-2015","07:19","","Season ticket bought",0,NA,6.6,""
+"06-Feb-2015","20:07","20:36","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,5.1,""
+"06-Feb-2015","17:40","17:57","Canary Wharf [London Underground] to Waterloo [London Underground / National Rail]",0,NA,5.1,""
+"06-Feb-2015","07:16","08:07","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"05-Feb-2015","17:57","18:38","Canary Wharf [London Underground] to Richmond",0,NA,5.1,""
+"05-Feb-2015","07:16","08:10","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"04-Feb-2015","17:35","17:53","Canary Wharf [London Underground] to [No touch-out]",0,NA,5.1,"We are not able to show where you touched out during this journey"
+"04-Feb-2015","07:18","08:14","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"03-Feb-2015","17:30","18:06","Canary Wharf [London Underground] to Richmond",0,NA,5.1,""
+"03-Feb-2015","07:17","08:08","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"02-Feb-2015","17:39","18:26","Canary Wharf [London Underground] to Richmond",0,NA,5.1,""
+"02-Feb-2015","07:17","08:07","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"02-Feb-2015","07:17","","Season ticket bought",0,NA,5.1,""
+"20-Feb-2015","21:52","22:17","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,5.1,""
+"20-Feb-2015","17:33","17:48","Canary Wharf [London Underground] to Waterloo [London Underground / National Rail]",0,NA,5.1,""
+"20-Feb-2015","07:15","08:06","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"19-Feb-2015","17:07","17:49","Canary Wharf [London Underground] to Richmond",0,NA,5.1,""
+"19-Feb-2015","07:15","08:02","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"18-Feb-2015","17:49","18:38","Canary Wharf [London Underground] to Richmond",0,NA,5.1,""
+"18-Feb-2015","07:14","08:02","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"17-Feb-2015","17:16","17:55","Canary Wharf [London Underground] to Richmond",0,NA,5.1,""
+"17-Feb-2015","07:12","08:06","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"16-Feb-2015","","18:38","[No touch-in] to Richmond",0,NA,5.1,"We are not able to show where you touched in during this journey"
+"16-Feb-2015","17:52","18:07","Canary Wharf [London Underground] to Waterloo [London Underground / National Rail]",0,NA,5.1,""
+"16-Feb-2015","07:10","08:08","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"16-Feb-2015","07:09","","Season ticket bought",0,NA,5.1,""
+"27-Feb-2015","21:06","21:37","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,5.1,NA
+"27-Feb-2015","17:48","18:14","Canary Wharf [London Underground] to Oxford Circus",0,NA,5.1,NA
+"27-Feb-2015","07:12","08:09","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"25-Feb-2015","17:17","18:03","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"25-Feb-2015","07:13","08:02","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"24-Feb-2015","17:30","18:08","Warren Street to Richmond",0,NA,5.1,NA
+"24-Feb-2015","08:06","09:03","Richmond to Warren Street",0,NA,5.1,NA
+"23-Feb-2015","17:28","18:08","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"23-Feb-2015","11:59","12:22","Warren Street to Canary Wharf [London Underground]",0,NA,5.1,NA
+"23-Feb-2015","07:13","07:58","Richmond to Warren Street",0,NA,5.1,NA
+"23-Feb-2015","07:13","","Season ticket bought",0,NA,5.1,NA
+"08-Mar-2015","14:49","15:33","Kings Cross [London Underground / National Rail] to Richmond",0,NA,5.1,NA
+"08-Mar-2015","13:51","14:31","Richmond to Kings Cross [London Underground / National Rail]",0,NA,5.1,NA
+"07-Mar-2015","22:23","22:49","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,5.1,NA
+"07-Mar-2015","13:22","13:55","Richmond to Green Park",0,NA,5.1,NA
+"07-Mar-2015","11:06","11:50","Kings Cross [London Underground / National Rail] to Richmond",0,NA,5.1,NA
+"07-Mar-2015","10:01","10:46","Richmond to Kings Cross [London Underground / National Rail]",0,NA,5.1,NA
+"06-Mar-2015","18:12","18:39","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,5.1,NA
+"06-Mar-2015","07:53","08:44","Richmond to Warren Street",0,NA,5.1,NA
+"05-Mar-2015","17:32","18:07","Warren Street to Richmond",0,NA,5.1,NA
+"05-Mar-2015","07:54","08:54","Richmond to Warren Street",0,NA,5.1,NA
+"04-Mar-2015","17:26","18:03","Warren Street to Richmond",0,NA,5.1,NA
+"04-Mar-2015","07:57","08:46","Richmond to Warren Street",0,NA,5.1,NA
+"03-Mar-2015","17:50","18:39","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"03-Mar-2015","12:06","12:30","Warren Street to Canary Wharf [London Underground]",0,NA,5.1,NA
+"03-Mar-2015","07:38","08:29","Richmond to Warren Street",0,NA,5.1,NA
+"02-Mar-2015","17:37","18:19","Warren Street to Richmond",0,NA,5.1,NA
+"02-Mar-2015","07:41","08:34","Richmond to Warren Street",0,NA,5.1,NA
+"02-Mar-2015","07:40","","Season ticket bought",0,NA,5.1,NA
+"14-Mar-2015","21:53","22:38","North Greenwich to Richmond",0,NA,5.1,NA
+"14-Mar-2015","19:31","19:50","Waterloo [London Underground / National Rail] to North Greenwich",0,NA,5.1,NA
+"14-Mar-2015","15:56","16:21","Richmond to Waterloo (platforms 12-19) [National Rail]",0,NA,5.1,NA
+"12-Mar-2015","17:11","17:54","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"12-Mar-2015","07:17","08:08","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"11-Mar-2015","17:45","18:38","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"11-Mar-2015","09:08","09:55","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"10-Mar-2015","17:39","18:23","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"10-Mar-2015","07:13","08:14","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"09-Mar-2015","17:27","18:08","Canary Wharf [London Underground] to Richmond",0,NA,5.1,NA
+"09-Mar-2015","11:50","12:20","Warren Street to Canary Wharf [London Underground]",0,NA,5.1,NA
+"09-Mar-2015","10:34","10:58","Canary Wharf [London Underground] to Warren Street",0,NA,5.1,NA
+"09-Mar-2015","07:11","08:06","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"09-Mar-2015","07:11","","Season ticket bought",0,NA,5.1,NA
+"21-Mar-2015","22:35","23:50","Angel to Richmond",0,NA,5.1,NA
+"21-Mar-2015","19:08","20:11","Richmond to Angel",0,NA,5.1,NA
+"21-Mar-2015","15:42","16:25","Kensington Olympia to Richmond",0,NA,5.1,NA
+"20-Mar-2015","07:20","08:18","Richmond to Aldgate East",0,NA,5.1,NA
+"19-Mar-2015","07:16","08:27","Richmond to Aldgate East",0,NA,5.1,NA
+"18-Mar-2015","18:13","19:16","Aldgate East to Richmond",0,NA,5.1,NA
+"18-Mar-2015","07:23","08:20","Richmond to Aldgate East",0,NA,5.1,NA
+"17-Mar-2015","18:03","19:02","Aldgate East to Richmond",0,NA,5.1,NA
+"17-Mar-2015","07:43","08:42","Richmond to Aldgate East",0,NA,5.1,NA
+"16-Mar-2015","17:33","18:33","Aldgate East to Richmond",0,NA,5.1,NA
+"16-Mar-2015","09:57","10:18","Canary Wharf [London Underground] to Aldgate East",0,NA,5.1,NA
+"16-Mar-2015","07:14","08:13","Richmond to Canary Wharf [London Underground]",0,NA,5.1,NA
+"16-Mar-2015","07:14","","Season ticket bought",0,NA,5.1,NA
+"29-Mar-2015","18:28","19:11","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,5.1,NA
+"29-Mar-2015","18:14","18:28","London Bridge [London Underground] to Waterloo (platforms 12-19) [National Rail]",0,NA,5.1,NA
+"29-Mar-2015","12:14","13:30","Richmond to Tower Hill",0,NA,5.1,NA
+"28-Mar-2015","21:01","","Bus journey, route 490",0,NA,5.1,NA
+"27-Mar-2015","17:54","18:23","Bank to Richmond",0,NA,5.1,NA
+"27-Mar-2015","07:13","08:19","Richmond to Aldgate East",0,NA,5.1,NA
+"26-Mar-2015","17:05","18:02","Aldgate East to Richmond",0,NA,5.1,NA
+"26-Mar-2015","07:16","08:21","Richmond to Aldgate East",0,NA,5.1,NA
+"25-Mar-2015","17:50","18:43","Aldgate East to Richmond",0,NA,5.1,NA
+"25-Mar-2015","07:09","08:19","Richmond to Aldgate East",0,NA,5.1,NA
+"24-Mar-2015","18:30","19:21","Aldgate East to Richmond",0,NA,5.1,NA
+"24-Mar-2015","07:58","09:02","Richmond to Aldgate East",0,NA,5.1,NA
+"23-Mar-2015","19:27","20:21","Aldgate East to Richmond",0,NA,5.1,NA
+"23-Mar-2015","07:13","08:19","Richmond to Aldgate East",0,NA,5.1,NA
+"23-Mar-2015","07:13","","Season ticket bought",0,NA,5.1,NA
+"02-Apr-2015","18:05","18:49","Canary Wharf [London Underground] to Richmond",0,NA,5.1,""
+"02-Apr-2015","07:03","08:01","Richmond to Canary Wharf [London Underground]",0,NA,5.1,""
+"01-Apr-2015","07:14","08:18","Richmond to Aldgate East",0,NA,5.1,""
+"31-Mar-2015","17:53","18:58","Aldgate East to Richmond",0,NA,5.1,""
+"31-Mar-2015","","08:07","[No touch-in] to Aldgate East",0,NA,5.1,"We are not able to show where you touched in during this journey"
+"31-Mar-2015","07:17","07:46","Richmond to Waterloo (platforms 12-19) [National Rail]",0,NA,5.1,""
+"30-Mar-2015","18:00","19:02","Aldgate East to Richmond",0,NA,5.1,""
+"30-Mar-2015","07:16","08:19","Richmond to Aldgate East",0,NA,5.1,""
+"30-Mar-2015","07:15","","Season ticket bought",0,NA,5.1,""
+"10-Apr-2015","21:58","22:29","Waterloo (platforms 12-19) [National Rail] to Richmond",2.7,NA,6.2,NA
+"10-Apr-2015","17:16","18:01","Richmond to Warren Street",4.2,NA,8.9,NA
+"10-Apr-2015","17:15","","Topped up,  ",NA,10,13.1,NA
+"08-Apr-2015","15:30","16:07","Bank to Richmond",4.2,NA,3.1,NA
+"08-Apr-2015","15:28","","Topped up, Bank",NA,5,7.3,NA
+"06-Apr-2015","07:48","08:40","Richmond to Kings Cross (Piccadilly, Victoria lines)",2.8,NA,2.3,NA
+"17-Apr-2015","17:53","18:51","Aldgate East to Richmond",0,NA,6.2,NA
+"17-Apr-2015","07:10","08:19","Richmond to Aldgate East",0,NA,6.2,NA
+"16-Apr-2015","07:12","08:22","Richmond to Aldgate East",0,NA,6.2,NA
+"15-Apr-2015","21:04","21:37","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.2,NA
+"15-Apr-2015","18:09","18:34","Aldgate East to Goodge Street",0,NA,6.2,NA
+"15-Apr-2015","07:11","08:19","Richmond to Aldgate East",0,NA,6.2,NA
+"14-Apr-2015","07:12","08:33","Richmond to Aldgate East",0,NA,6.2,NA
+"13-Apr-2015","18:03","19:03","Aldgate East to Richmond",0,NA,6.2,NA
+"13-Apr-2015","07:11","08:24","Richmond to Aldgate East",0,NA,6.2,NA
+"13-Apr-2015","07:10","","Season ticket bought",0,NA,6.2,NA
+"26-Apr-2015","17:27","18:25","Canonbury to Richmond",0,NA,14,NA
+"26-Apr-2015","13:30","14:27","Richmond to Canonbury",0,NA,14,NA
+"25-Apr-2015","22:42","23:48","Camden Road to Richmond",0,NA,14,NA
+"25-Apr-2015","22:35","","Bus journey, route 29",0,NA,14,NA
+"25-Apr-2015","20:27","","Bus journey, route 91",0,NA,14,NA
+"25-Apr-2015","19:04","19:50","Richmond to Caledonian Road and Barnsbury",0,NA,14,NA
+"24-Apr-2015","18:29","19:49","Aldgate East to Richmond",0,NA,14,NA
+"24-Apr-2015","07:23","08:21","Richmond to Aldgate East",0,NA,14,NA
+"23-Apr-2015","18:23","19:21","Aldgate East to Richmond",0,NA,14,NA
+"23-Apr-2015","07:30","08:47","Richmond to Aldgate East",0,NA,14,NA
+"22-Apr-2015","20:28","20:57","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,14,NA
+"22-Apr-2015","18:31","18:48","Aldgate East to Embankment",0,NA,14,NA
+"22-Apr-2015","07:07","08:18","Richmond to Aldgate East",0,NA,14,NA
+"22-Apr-2015","07:07","","Automated Refund, Richmond",NA,3.9,14,NA
+"22-Apr-2015","07:07","","Automated Refund, Richmond",NA,3.9,10.1,NA
+"21-Apr-2015","14:01","14:53","Aldgate East to Richmond",0,NA,6.2,NA
+"21-Apr-2015","07:36","08:40","Richmond to Aldgate East",0,NA,6.2,NA
+"20-Apr-2015","16:31","17:23","Aldgate East to Richmond",0,NA,6.2,NA
+"20-Apr-2015","07:09","08:19","Richmond to Aldgate East",0,NA,6.2,NA
+"20-Apr-2015","07:09","","Season ticket bought",0,NA,6.2,NA
+"02-May-2015","15:46","16:51","Cutty Sark DLR to Richmond",0,NA,14,NA
+"02-May-2015","11:30","","Bus journey, route 422",0,NA,14,NA
+"02-May-2015","10:42","11:24","Richmond to North Greenwich",0,NA,14,NA
+"01-May-2015","21:52","22:29","Leicester Square to Richmond",0,NA,14,NA
+"01-May-2015","17:20","17:44","Aldgate East to Goodge Street",0,NA,14,NA
+"01-May-2015","07:32","08:38","Richmond to Aldgate East",0,NA,14,NA
+"30-Apr-2015","17:34","18:26","Aldgate East to Richmond",0,NA,14,NA
+"30-Apr-2015","07:29","08:43","Richmond to Aldgate East",0,NA,14,NA
+"29-Apr-2015","17:40","18:41","Aldgate East to Richmond",0,NA,14,NA
+"29-Apr-2015","10:38","10:53","Canary Wharf [London Underground] to Aldgate East",0,NA,14,NA
+"29-Apr-2015","07:03","08:10","Richmond to Canary Wharf [London Underground]",0,NA,14,NA
+"28-Apr-2015","18:33","19:32","Aldgate East to Richmond",0,NA,14,NA
+"28-Apr-2015","07:23","08:20","Richmond to Aldgate East",0,NA,14,NA
+"27-Apr-2015","17:45","18:56","Aldgate East to Richmond",0,NA,14,NA
+"27-Apr-2015","07:12","08:22","Richmond to Aldgate East",0,NA,14,NA
+"27-Apr-2015","07:11","","Season ticket bought",0,NA,14,NA
+"10-May-2015","18:12","18:41","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,7,NA
+"10-May-2015","11:58","12:37","Richmond to Charing Cross [London Underground]",0,NA,7,NA
+"08-May-2015","21:38","22:06","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,7,NA
+"08-May-2015","17:32","17:56","Aldgate East to Goodge Street",0,NA,7,NA
+"08-May-2015","07:32","08:42","Richmond to Aldgate East",0,NA,7,NA
+"07-May-2015","17:38","18:35","Aldgate East to Richmond",0,NA,7,NA
+"07-May-2015","07:26","08:41","Richmond to Aldgate East",0,NA,7,NA
+"06-May-2015","19:06","19:48","Tottenham Court Road to Richmond",0,NA,7,NA
+"06-May-2015","16:53","17:17","Canary Wharf [London Underground] to Goodge Street",0,NA,7,NA
+"06-May-2015","13:02","13:30","Aldgate East to Canary Wharf DLR",0,NA,7,NA
+"06-May-2015","07:11","08:19","Richmond to Aldgate East",0,NA,7,NA
+"05-May-2015","18:12","19:17","Aldgate East to Richmond",0,NA,7,NA
+"05-May-2015","07:13","08:19","Richmond to Aldgate East",0,NA,7,NA
+"05-May-2015","07:12","","Season ticket bought",0,NA,7,NA
+"04-May-2015","21:23","22:10","Piccadilly Circus to Richmond",4.2,NA,7,NA
+"04-May-2015","19:06","19:51","Richmond to Piccadilly Circus",2.8,NA,11.2,NA
+"26-Jun-2015","23:13","00:01","Kentish Town West to Richmond",0,NA,6.3,NA
+"26-Jun-2015","16:57","17:43","Richmond to Kentish Town West",0,NA,6.3,NA
+"25-Jun-2015","17:18","18:19","Aldgate East to Richmond",0,NA,6.3,NA
+"25-Jun-2015","07:32","08:30","Richmond to Aldgate East",0,NA,6.3,NA
+"24-Jun-2015","17:07","18:02","Aldgate East to Richmond",0,NA,6.3,NA
+"24-Jun-2015","07:33","08:42","Richmond to Aldgate East",0,NA,6.3,NA
+"23-Jun-2015","16:37","17:32","Aldgate East to Richmond",0,NA,6.3,NA
+"23-Jun-2015","07:12","08:20","Richmond to Aldgate East",0,NA,6.3,NA
+"22-Jun-2015","17:05","18:02","Aldgate East to Richmond",0,NA,6.3,NA
+"22-Jun-2015","07:11","08:21","Richmond to Aldgate East",0,NA,6.3,NA
+"22-Jun-2015","07:11","","Season ticket bought",0,NA,6.3,NA
+"05-Jul-2015","14:47","15:40","Blackheath [National Rail] to Richmond",0,NA,6.3,NA
+"05-Jul-2015","11:32","12:34","Richmond to Blackheath [National Rail]",0,NA,6.3,NA
+"04-Jul-2015","19:18","20:11","Seven Sisters to Richmond",0,NA,6.3,NA
+"04-Jul-2015","18:59","","Bus journey, route 259",0,NA,6.3,NA
+"04-Jul-2015","13:25","","Bus journey, route 259",0,NA,6.3,NA
+"04-Jul-2015","13:05","13:22","Oxford Circus to Seven Sisters",0,NA,6.3,NA
+"04-Jul-2015","12:12","12:48","Richmond to Oxford Circus",0,NA,6.3,NA
+"03-Jul-2015","22:43","23:08","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.3,NA
+"03-Jul-2015","21:45","21:58","Aldgate East to Blackfriars [London Underground]",0,NA,6.3,NA
+"03-Jul-2015","18:52","19:14","Embankment to Whitechapel",0,NA,6.3,NA
+"03-Jul-2015","17:14","17:30","Aldgate East to Embankment",0,NA,6.3,NA
+"03-Jul-2015","10:51","11:42","Richmond to Aldgate East",0,NA,6.3,NA
+"02-Jul-2015","17:10","18:09","Aldgate East to Richmond",0,NA,6.3,NA
+"02-Jul-2015","07:31","08:41","Richmond to Aldgate East",0,NA,6.3,NA
+"01-Jul-2015","16:29","17:29","Aldgate East to Richmond",0,NA,6.3,NA
+"01-Jul-2015","07:16","08:23","Richmond to Aldgate East",0,NA,6.3,NA
+"30-Jun-2015","15:56","17:02","Aldgate East to Richmond",0,NA,6.3,NA
+"30-Jun-2015","11:18","11:35","Canary Wharf [London Underground] to Aldgate East",0,NA,6.3,NA
+"30-Jun-2015","08:04","08:26","Aldgate East to Canary Wharf [London Underground]",0,NA,6.3,NA
+"30-Jun-2015","06:53","07:59","Richmond to Aldgate East",0,NA,6.3,NA
+"29-Jun-2015","21:19","21:50","Bank to Richmond",0,NA,6.3,NA
+"29-Jun-2015","07:13","08:22","Richmond to Aldgate East",0,NA,6.3,NA
+"29-Jun-2015","07:12","","Season ticket bought",0,NA,6.3,NA
+"11-Jul-2015","10:08","10:37","Kensington Olympia to Richmond",0,NA,6.3,""
+"11-Jul-2015","09:08","09:41","Richmond to Kensington Olympia",0,NA,6.3,""
+"08-Jul-2015","20:11","","Waterloo (platforms 12-19) [National Rail] to [No touch-out]",0,NA,6.3,"We are not able to show where you touched out during this journey"
+"08-Jul-2015","07:52","08:33","Richmond to Waterloo (platforms 12-19) [National Rail]",0,NA,6.3,""
+"07-Jul-2015","17:02","17:57","Aldgate East to Richmond",0,NA,6.3,""
+"07-Jul-2015","07:09","08:11","Richmond to Aldgate East",0,NA,6.3,""
+"06-Jul-2015","17:05","18:05","Aldgate East to Richmond",0,NA,6.3,""
+"06-Jul-2015","07:12","08:22","Richmond to Aldgate East",0,NA,6.3,""
+"06-Jul-2015","07:12","","Season ticket bought",0,NA,6.3,""
+"18-Jul-2015","19:57","20:29","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.3,""
+"18-Jul-2015","16:31","16:53","West Dulwich [National Rail] to Victoria [National Rail]",0,NA,6.3,""
+"16-Jul-2015","17:01","18:03","Aldgate East to Richmond",0,NA,6.3,""
+"16-Jul-2015","07:12","08:20","Richmond to Aldgate East",0,NA,6.3,""
+"15-Jul-2015","","17:54","[No touch-in] to Richmond",0,NA,6.3,"We are not able to show where you touched in during this journey"
+"15-Jul-2015","07:13","08:21","Richmond to Aldgate East",0,NA,6.3,""
+"14-Jul-2015","19:55","20:13","Barnes [National Rail] to Richmond",0,NA,6.3,""
+"14-Jul-2015","18:42","18:59","Richmond to Barnes [National Rail]",0,NA,6.3,""
+"14-Jul-2015","17:05","18:02","Aldgate East to Richmond",0,NA,6.3,""
+"14-Jul-2015","09:52","10:15","South Kensington to Aldgate East",0,NA,6.3,""
+"14-Jul-2015","08:38","09:19","Richmond to South Kensington",0,NA,6.3,""
+"13-Jul-2015","16:56","17:57","Aldgate East to Richmond",0,NA,6.3,""
+"13-Jul-2015","07:10","08:24","Richmond to Aldgate East",0,NA,6.3,""
+"13-Jul-2015","07:09","","Season ticket bought",0,NA,6.3,""
+"25-Jul-2015","15:18","15:47","Kensington Olympia to Richmond",0,NA,6.3,NA
+"25-Jul-2015","13:22","13:56","Richmond to Kensington Olympia",0,NA,6.3,NA
+"24-Jul-2015","19:56","20:48","Leicester Square to Richmond",0,NA,6.3,NA
+"24-Jul-2015","16:15","16:55","Richmond to Warren Street",0,NA,6.3,NA
+"23-Jul-2015","17:04","18:02","Aldgate East to Richmond",0,NA,6.3,NA
+"23-Jul-2015","07:35","08:43","Richmond to Aldgate East",0,NA,6.3,NA
+"22-Jul-2015","20:52","21:18","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.3,NA
+"22-Jul-2015","17:00","17:15","Aldgate East to Embankment",0,NA,6.3,NA
+"22-Jul-2015","07:32","08:41","Richmond to Aldgate East",0,NA,6.3,NA
+"21-Jul-2015","19:54","","Bus journey, route 33",0,NA,6.3,NA
+"21-Jul-2015","18:42","18:57","Richmond to Barnes [National Rail]",0,NA,6.3,NA
+"21-Jul-2015","15:16","15:59","Euston [London Underground] to Richmond",0,NA,6.3,NA
+"21-Jul-2015","06:40","07:19","Richmond to Euston [London Underground]",0,NA,6.3,NA
+"20-Jul-2015","17:15","18:14","Aldgate East to Richmond",0,NA,6.3,NA
+"20-Jul-2015","07:11","08:20","Richmond to Aldgate East",0,NA,6.3,NA
+"20-Jul-2015","07:11","","Season ticket bought",0,NA,6.3,NA
+"02-Aug-2015","16:32","17:32","Whitechapel to Richmond",0,NA,6.3,NA
+"01-Aug-2015","13:25","14:27","Richmond to Whitechapel",0,NA,6.3,NA
+"30-Jul-2015","16:24","17:14","Aldgate East to Richmond",0,NA,6.3,NA
+"30-Jul-2015","07:12","08:20","Richmond to Aldgate East",0,NA,6.3,NA
+"29-Jul-2015","20:24","20:48","Waterloo (platforms 12-19) [National Rail] to Richmond",0,NA,6.3,NA
+"29-Jul-2015","17:02","17:25","Aldgate East to Goodge Street",0,NA,6.3,NA
+"29-Jul-2015","07:09","08:19","Richmond to Aldgate East",0,NA,6.3,NA
+"28-Jul-2015","19:55","","Bus journey, route 33",0,NA,6.3,NA
+"28-Jul-2015","18:39","18:56","Richmond to Barnes [National Rail]",0,NA,6.3,NA
+"28-Jul-2015","13:06","13:49","Canary Wharf [London Underground] to Richmond",0,NA,6.3,NA
+"28-Jul-2015","07:09","08:24","Richmond to Canary Wharf [London Underground]",0,NA,6.3,NA
+"27-Jul-2015","16:58","18:11","Aldgate East to Richmond",0,NA,6.3,NA
+"27-Jul-2015","07:10","08:18","Richmond to Aldgate East",0,NA,6.3,NA
+"27-Jul-2015","07:10","","Season ticket bought",0,NA,6.3,NA
+"09-Aug-2015","17:26","18:25","Richmond to Whitechapel",0,NA,6.3,NA
+"07-Aug-2015","21:38","22:08","Leicester Square to Richmond",0,NA,6.3,NA
+"07-Aug-2015","15:34","16:16","Richmond to Goodge Street",0,NA,6.3,NA
+"04-Aug-2015","19:54","","Bus journey, route 337",0,NA,6.3,NA
+"04-Aug-2015","18:37","18:56","Richmond to Barnes [National Rail]",0,NA,6.3,NA
+"03-Aug-2015","14:41","15:32","Aldgate East to Richmond",0,NA,6.3,NA
+"03-Aug-2015","07:11","08:19","Richmond to Aldgate East",0,NA,6.3,NA
+"03-Aug-2015","07:11","","Season ticket bought",0,NA,6.3,NA
+"16-Aug-2015","13:29","14:27","Richmond to Whitechapel",2.8,NA,6.2,NA
+"15-Aug-2015","11:19","12:13","Whitechapel to Richmond",2.8,NA,9,NA
+"14-Aug-2015","16:10","17:14","Richmond to Whitechapel",3.9,NA,11.8,NA
+"11-Aug-2015","15:16","16:18","Aldgate East to Richmond",2.8,NA,15.7,NA
+"11-Aug-2015","07:12","08:18","Richmond to Aldgate East",3.9,NA,18.5,NA
+"11-Aug-2015","07:12","","Topped up,  ",NA,20,22.4,NA
+"10-Aug-2015","08:08","09:07","Whitechapel to Richmond",3.9,NA,2.4,NA
+"22-Aug-2015","08:34","09:23","Richmond to Willesden Junction",1.5,NA,2.1,""
+"20-Aug-2015","16:50","17:43","Aldgate East to Richmond",3.9,NA,3.6,""
+"19-Aug-2015","17:10","17:27","Canary Wharf [London Underground] to Whitechapel",1.7,NA,7.5,""
+"19-Aug-2015","07:14","08:24","Richmond to Canary Wharf [London Underground]",3.9,NA,9.2,""
+"18-Aug-2015","20:34","21:06","Waterloo (platforms 12-19) [National Rail] to Richmond",0.7,NA,13.1,"The fare for this journey was capped as you reached the daily charging limit for the zones used"
+"18-Aug-2015","16:48","17:13","Aldgate East to Goodge Street",2.3,NA,13.8,""
+"18-Aug-2015","12:34","12:51","Canary Wharf [London Underground] to Aldgate East",2.3,NA,16.1,""
+"18-Aug-2015","07:13","08:21","Richmond to Canary Wharf [London Underground]",3.9,NA,18.4,""
+"18-Aug-2015","07:12","","Topped up,  ",NA,20,22.3,""
+"17-Aug-2015","08:17","09:16","Whitechapel to Richmond",3.9,NA,2.3,""
+"05-Sep-2015","13:35","14:35","Whitechapel to Richmond",2.8,NA,11.6,""
+"04-Sep-2015","13:24","13:39","Canary Wharf [London Underground] to Whitechapel",1.5,NA,14.4,""
+"04-Sep-2015","07:15","08:24","Richmond to Canary Wharf [London Underground]",3.9,NA,15.9,""
+"04-Sep-2015","07:14","","Topped up,  ",NA,20,19.8,""
+"03-Sep-2015","09:07","10:14","Whitechapel to Richmond",3.9,NA,-0.2,""
+"02-Sep-2015","22:08","22:17","Mile End to Whitechapel",0.8,NA,3.7,"The fare for this journey was capped as you reached the daily charging limit for the zones used"
+"02-Sep-2015","20:27","","Bus journey, route D6",1.5,NA,4.5,""
+"02-Sep-2015","19:57","","Bus journey, route D6",1.5,NA,6,""
+"02-Sep-2015","19:39","19:46","Whitechapel to Mile End",1.5,NA,7.5,""
+"02-Sep-2015","17:04","18:03","Richmond to Whitechapel",3.9,NA,9,""
+"01-Sep-2015","19:51","20:33","Embankment to Richmond",2.7,NA,12.9,"The fare for this journey was capped as you reached the daily charging limit for the zones used"
+"01-Sep-2015","13:02","13:21","Canary Wharf [London Underground] to Green Park",2.3,NA,15.6,""
+"01-Sep-2015","10:44","11:28","Richmond to Canary Wharf [London Underground]",4.2,NA,17.9,""
+"01-Sep-2015","10:44","","Topped up,  ",NA,20,22.1,""
+"12-Sep-2015","21:55","22:45","Camden Road to Richmond",1.5,NA,10.1,NA
+"12-Sep-2015","16:23","17:05","Richmond to Camden Road",1.5,NA,11.6,NA
+"11-Sep-2015","21:23","22:04","Embankment to Richmond",2.8,NA,13.1,NA
+"11-Sep-2015","12:19","12:57","Richmond to Green Park",2.8,NA,15.9,NA
+"11-Sep-2015","12:19","","Automated Refund, Richmond",NA,2.4,18.7,NA
+"08-Sep-2015","11:01","11:42","Green Park to Richmond",2.8,NA,16.3,NA
+"08-Sep-2015","08:32","09:19","Richmond to Green Park",3.9,NA,19.1,NA
+"08-Sep-2015","08:30","","Topped up,  ",NA,20,23,NA
+"07-Sep-2015","19:04","19:37","Kensington Olympia to Richmond",1.5,NA,3,NA
+"07-Sep-2015","17:12","18:13","Canary Wharf [London Underground] to Kensington Olympia",2.9,NA,4.5,NA
+"07-Sep-2015","13:23","14:07","Richmond to Canary Wharf [London Underground]",4.2,NA,7.4,NA
+"16-Sep-2015","12:12","13:28","Whitechapel to Heathrow Terminal 5 [London Underground]",3.1,NA,8.9,NA
+"16-Sep-2015","11:34","11:42","Tower Hill to Whitechapel",2.3,NA,12,NA
+"16-Sep-2015","08:16","08:23","Whitechapel to Tower Hill",2.3,NA,14.3,NA
+"16-Sep-2015","08:16","","Topped up, Whitechapel",NA,15,16.6,NA
+"15-Sep-2015","21:05","21:21","Tower Hill to Whitechapel",2.3,NA,1.6,NA
+"15-Sep-2015","09:14","09:21","Whitechapel to Tower Hill",2.3,NA,3.9,NA
+"14-Sep-2015","17:15","18:20","Richmond to Whitechapel",3.9,NA,6.2,NA
+"26-Sep-2015","17:14","17:44","South Kensington to Richmond",2.8,NA,11.1,NA
+"26-Sep-2015","13:58","14:25","Richmond to South Kensington",2.8,NA,13.9,NA
+"25-Sep-2015","10:53","11:38","Tottenham Court Road to Richmond",4.2,NA,16.7,NA
+"25-Sep-2015","10:12","10:37","Whitechapel to Holborn",2.3,NA,20.9,NA
+"25-Sep-2015","10:11","","Topped up, Whitechapel",NA,20,23.2,NA
+"24-Sep-2015","16:49","17:17","Kings Cross (Met, Circle, H&C lines) to Whitechapel",2.9,NA,3.2,NA
+"24-Sep-2015","15:08","15:55","Richmond to Kings Cross (Piccadilly, Victoria lines)",2.8,NA,6.1,NA
+"03-Oct-2015","12:51","13:38","Shadwell DLR to Richmond",4.2,NA,-1.1,NA
+"03-Oct-2015","12:09","12:17","Whitechapel to Wapping [London Overground]",1.5,NA,3.1,NA
+"02-Oct-2015","16:00","16:23","Holborn to Stepney Green",2.3,NA,4.6,NA
+"02-Oct-2015","13:42","14:12","Richmond to Leicester Square",4.2,NA,6.9,NA
+"09-Oct-2015","19:34","20:21","South Kensington to Richmond",0,NA,3.9,NA
+"09-Oct-2015","12:44","13:06","St Paul's to South Kensington",0,NA,3.9,NA
+"09-Oct-2015","11:09","11:34","South Kensington to St Paul's",0,NA,3.9,NA
+"09-Oct-2015","08:13","08:42","Whitechapel to South Kensington",0,NA,3.9,NA
+"08-Oct-2015","17:06","17:38","South Kensington to Whitechapel",0,NA,3.9,NA
+"08-Oct-2015","08:42","09:17","Richmond to South Kensington",0,NA,3.9,NA
+"07-Oct-2015","19:52","20:22","South Kensington to Richmond",0,NA,3.9,NA
+"07-Oct-2015","08:32","09:15","Richmond to South Kensington",0,NA,3.9,NA
+"06-Oct-2015","15:50","16:23","South Kensington to Richmond",0,NA,3.9,NA
+"06-Oct-2015","08:34","09:08","Richmond to South Kensington",0,NA,3.9,NA
+"05-Oct-2015","15:29","16:14","Green Park to Richmond",0,NA,3.9,NA
+"05-Oct-2015","14:08","14:23","South Kensington to Green Park",0,NA,3.9,NA
+"05-Oct-2015","08:20","08:55","Richmond to South Kensington",0,NA,3.9,NA
+"05-Oct-2015","08:20","","Season ticket bought",0,NA,3.9,NA
+"05-Oct-2015","08:19","","Topped up,  ",NA,5,3.9,NA
+"18-Oct-2015","12:04","13:07","Whitechapel to Richmond",0,NA,1.1,NA
+"17-Oct-2015","01:07","","Bus journey, route N25",0,NA,1.1,NA
+"17-Oct-2015","20:08","20:32","Whitechapel to Leicester Square",0,NA,1.1,NA
+"17-Oct-2015","17:06","17:25","London Bridge [London Underground] to Whitechapel",0,NA,1.1,NA
+"17-Oct-2015","14:57","15:02","Piccadilly Circus to Embankment",0,NA,1.1,NA
+"17-Oct-2015","12:39","13:28","Richmond to Green Park",0,NA,1.1,NA
+"16-Oct-2015","22:00","22:25","Stamford Brook to Richmond",0,NA,1.1,NA
+"16-Oct-2015","18:57","19:21","Richmond to Hammersmith (District, Piccadilly lines)",0,NA,1.1,NA
+"16-Oct-2015","14:42","15:13","South Kensington to Richmond",0,NA,1.1,NA
+"16-Oct-2015","10:28","10:59","Richmond to South Kensington",0,NA,1.1,NA
+"14-Oct-2015","21:19","21:59","Kentish Town West to Richmond",0,NA,1.1,NA
+"14-Oct-2015","16:49","17:30","Richmond to Camden Road",0,NA,1.1,NA
+"14-Oct-2015","13:42","14:13","South Kensington to Richmond",0,NA,1.1,NA
+"14-Oct-2015","10:29","10:59","Richmond to South Kensington",0,NA,1.1,NA
+"13-Oct-2015","20:05","20:35","South Kensington to Richmond",0,NA,1.1,NA
+"13-Oct-2015","12:37","13:08","Richmond to South Kensington",0,NA,1.1,NA
+"12-Oct-2015","14:29","15:01","South Kensington to Richmond",0,NA,1.1,NA
+"12-Oct-2015","14:28","","Season ticket bought, South Kensington",0,NA,1.1,NA
+"12-Oct-2015","11:22","11:50","Richmond to South Kensington",2.8,NA,1.1,NA
+"25-Oct-2015","10:55","11:50","Whitechapel to Richmond",0,NA,1.1,NA
+"24-Oct-2015","13:07","14:05","Richmond to Whitechapel",0,NA,1.1,NA
+"23-Oct-2015","15:33","16:02","South Kensington to Richmond",0,NA,1.1,NA
+"23-Oct-2015","10:32","11:02","Bank to South Kensington",0,NA,1.1,NA
+"23-Oct-2015","09:12","09:27","Whitechapel to Bank",0,NA,1.1,NA
+"22-Oct-2015","20:39","20:57","Canary Wharf [London Underground] to Whitechapel",0,NA,1.1,NA
+"22-Oct-2015","16:32","16:57","South Kensington to Canary Wharf [London Underground]",0,NA,1.1,NA
+"22-Oct-2015","12:10","12:39","Richmond to South Kensington",0,NA,1.1,NA
+"21-Oct-2015","20:26","20:36","Clapham Junction [National Rail] to Richmond",0,NA,1.1,NA
+"21-Oct-2015","18:25","18:41","Richmond to Clapham Junction [National Rail]",0,NA,1.1,NA
+"21-Oct-2015","13:48","14:31","South Kensington to Richmond",0,NA,1.1,NA
+"21-Oct-2015","10:16","10:52","Richmond to South Kensington",0,NA,1.1,NA
+"20-Oct-2015","19:56","20:29","South Kensington to Richmond",0,NA,1.1,NA
+"20-Oct-2015","12:33","12:59","Richmond to South Kensington",0,NA,1.1,NA
+"19-Oct-2015","14:28","15:01","South Kensington to Richmond",0,NA,1.1,NA
+"19-Oct-2015","08:19","09:11","Richmond to South Kensington",0,NA,1.1,NA
+"19-Oct-2015","08:17","","Season ticket bought",0,NA,1.1,NA
+"01-Nov-2015","20:22","20:50","Kings Cross (Met, Circle, H&C lines) to Whitechapel",0,NA,1.1,NA
+"31-Oct-2015","08:04","08:29","Whitechapel to Kings Cross (Met, Circle, H&C lines)",0,NA,1.1,NA
+"30-Oct-2015","23:12","23:59","New Beckenham [National Rail] to Whitechapel",0,NA,1.1,NA
+"30-Oct-2015","19:43","","Bus journey, route 194",0,NA,1.1,NA
+"30-Oct-2015","19:03","19:29","Whitechapel to Sydenham",0,NA,1.1,NA
+"30-Oct-2015","17:22","17:50","South Kensington to Whitechapel",0,NA,1.1,NA
+"30-Oct-2015","10:37","11:10","Richmond to South Kensington",0,NA,1.1,NA
+"29-Oct-2015","20:44","21:29","Victoria [London Underground] to Richmond",0,NA,1.1,NA
+"29-Oct-2015","17:58","18:35","Richmond to Victoria [London Underground]",0,NA,1.1,NA
+"28-Oct-2015","18:31","18:57","South Kensington to Richmond",0,NA,1.1,NA
+"28-Oct-2015","09:27","09:56","Richmond to South Kensington",0,NA,1.1,NA
+"27-Oct-2015","19:55","20:24","South Kensington to Richmond",0,NA,1.1,NA
+"27-Oct-2015","11:41","12:11","Richmond to South Kensington",0,NA,1.1,NA
+"26-Oct-2015","16:40","17:15","South Kensington to Richmond",0,NA,1.1,NA
+"26-Oct-2015","11:11","11:38","Richmond to South Kensington",0,NA,1.1,NA
+"26-Oct-2015","11:10","","Season ticket bought",0,NA,1.1,NA
+"08-Nov-2015","12:11","13:03","Whitechapel to Richmond",0,NA,2.9,""
+"07-Nov-2015","22:52","23:10","Embankment to Whitechapel",0,NA,2.9,""
+"07-Nov-2015","21:06","21:21","Battersea Park [National Rail] to Victoria (platforms 9-19) [National Rail]",0,NA,2.9,""
+"07-Nov-2015","18:28","","Bus journey, route 345",0,NA,2.9,""
+"07-Nov-2015","16:12","17:09","Richmond to Brixton [London Underground]",0,NA,2.9,""
+"07-Nov-2015","13:21","14:02","South Kensington to Richmond",0,NA,2.9,""
+"07-Nov-2015","09:18","09:46","Whitechapel to South Kensington",0,NA,2.9,""
+"06-Nov-2015","22:00","22:46","Romford to Whitechapel",1.5,NA,2.9,"You have been charged for travelling in zones not covered by your Travelcard."
+"06-Nov-2015","22:00","","Topped up,  ",NA,5,4.4,""
+"06-Nov-2015","17:00","18:04","South Kensington to Romford",1.7,NA,-0.6,"You have been charged for travelling in zones not covered by your Travelcard."
+"06-Nov-2015","07:16","07:58","Richmond to South Kensington",0,NA,1.1,""
+"04-Nov-2015","15:21","15:52","South Kensington to Richmond",0,NA,1.1,""
+"04-Nov-2015","10:09","10:39","Richmond to South Kensington",0,NA,1.1,""
+"03-Nov-2015","19:55","20:21","South Kensington to Richmond",0,NA,1.1,""
+"03-Nov-2015","10:08","10:39","Richmond to South Kensington",0,NA,1.1,""
+"02-Nov-2015","16:36","17:06","South Kensington to Richmond",0,NA,1.1,""
+"02-Nov-2015","06:57","07:26","Whitechapel to South Kensington",0,NA,1.1,""
+"02-Nov-2015","06:57","","Season ticket bought, Whitechapel",0,NA,1.1,""

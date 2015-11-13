@@ -1,0 +1,13 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+12-Sep-2015,21:55,22:45,"Camden Road to Richmond",1.50,,10.10,""
+12-Sep-2015,16:23,17:05,"Richmond to Camden Road",1.50,,11.60,""
+11-Sep-2015,21:23,22:04,"Embankment to Richmond",2.80,,13.10,""
+11-Sep-2015,12:19,12:57,"Richmond to Green Park",2.80,,15.90,""
+11-Sep-2015,12:19,,"Automated Refund, Richmond",,2.40,18.70,""
+08-Sep-2015,11:01,11:42,"Green Park to Richmond",2.80,,16.30,""
+08-Sep-2015,08:32,09:19,"Richmond to Green Park",3.90,,19.10,""
+08-Sep-2015,08:30,,"Topped up,  ",,20.00,23.00,""
+07-Sep-2015,19:04,19:37,"Kensington Olympia to Richmond",1.50,,3.00,""
+07-Sep-2015,17:12,18:13,"Canary Wharf [London Underground] to Kensington Olympia",2.90,,4.50,""
+07-Sep-2015,13:23,14:07,"Richmond to Canary Wharf [London Underground]",4.20,,7.40,""
