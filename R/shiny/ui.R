@@ -108,7 +108,10 @@
                     radioButtons("journeys", NULL,
                                   c("5" = "5",
                                     "10" = "10",
-                                    "15" = "15"))),
+                                    "15" = "15",
+                                    "20" = "20",
+                                    "25" = "25",
+                                    "30" = "30"))),
            mainPanel(plotOutput("circos", height = 750, width = 750)))
 
 # close the UI definition
