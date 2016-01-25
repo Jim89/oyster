@@ -91,6 +91,7 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
          start.day = wday(start.datetime, label = T),
          weekend = ifelse(start.day %in% c("Sat", "Sun"), "Weekend", "Weekday")
          )
+  oyster %<>% tbl_df
   
   
 # get journey station information ----------------------------------------------
