@@ -77,8 +77,10 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
          end.datetime = paste(date, end.time.clean, sep = " ") %>% dmy_hms()
          )
 
-# find records where I touched out after mighnight
-  afterMidnight <- substring(oyster$end.time,1,2) %in% c("00","01")
+# find records where I touched out after mighnight (and touched in before!)
+  afterMidnightSrt <- substring(oyster$start.time,1,2) %in% c("00","01")
+  afterMidnightEnd <- substring(oyster$end.time,1,2) %in% c("00","01")
+  afterMidnight <- ifelse(afterMidnightSrt == TRUE & afterMidnightEnd == TRUE, FALSE, afterMidnightEnd)
 
 # set the end datetimes to be the next day (i.e. after midnight) where needed
   oyster[afterMidnight, 13]  <-  oyster[afterMidnight, 13] + days(1)
@@ -113,5 +115,12 @@ CeilingTime <- function(x, k = 1, unit = c("second", "minute", "hour", "day",
            )
 
 # clear out the junk
-  rm(list = c("afterMidnight", "badRecords", "from", "to", "toFrom", "files"))
+  rm(list = c("afterMidnight",
+              "afterMidnightEnd",
+              "afterMidnightSrt",
+              "badRecords",
+              "from",
+              "to",
+              "toFrom",
+              "files"))
   gc()
