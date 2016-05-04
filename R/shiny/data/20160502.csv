@@ -1,0 +1,10 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+30-Apr-2016,22:20,23:07,"New Beckenham [National Rail] to Richmond",2.80,,9.80,""
+30-Apr-2016,12:20,13:12,"Richmond to New Beckenham [National Rail]",2.80,,12.60,""
+29-Apr-2016,12:05,12:31,"South Kensington to Richmond",2.80,,15.40,""
+29-Apr-2016,08:36,,"Topped up, South Kensington",,20.00,18.20,""
+29-Apr-2016,08:05,08:36,"Richmond to South Kensington",3.90,,-1.80,""
+28-Apr-2016,13:00,13:30,"Waterloo (platforms 12-19) [National Rail] to Richmond",2.80,,2.10,""
+28-Apr-2016,12:42,,"Bus journey, route 521",1.50,,4.90,""
+28-Apr-2016,10:00,10:46,"Richmond to Chancery Lane",4.30,,6.40,""

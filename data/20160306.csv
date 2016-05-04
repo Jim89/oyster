@@ -1,0 +1,17 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+28-Feb-2016,17:11,17:53,"Waterloo [London Underground / National Rail] to Richmond",2.80,,12.60,""
+28-Feb-2016,12:53,13:24,"Richmond to Waterloo (platforms 12-19) [National Rail]",2.80,,15.40,""
+27-Feb-2016,23:33,00:23,"Edgware Road (District, Circle, H&C lines) to Richmond",2.80,,18.20,""
+27-Feb-2016,19:23,,"Topped up, Edgware Road (District, Circle, H&C lines)",,20.00,21.00,""
+27-Feb-2016,18:38,19:23,"Richmond to Edgware Road (District, Circle, H&C lines)",2.80,,1.00,""
+27-Feb-2016,13:11,14:08,"Whitechapel to Richmond",2.80,,3.80,""
+26-Feb-2016,18:52,19:52,"Richmond to Whitechapel",3.90,,6.60,""
+25-Feb-2016,21:29,21:59,"Waterloo (platforms 12-19) [National Rail] to Richmond",2.80,,10.50,""
+25-Feb-2016,18:24,19:00,"Richmond to Green Park",2.80,,13.30,""
+24-Feb-2016,14:22,14:52,"South Kensington to Richmond",2.80,,16.10,""
+24-Feb-2016,07:12,07:39,"Whitechapel to South Kensington",2.90,,18.90,""
+23-Feb-2016,19:24,,"Topped up, Whitechapel",,20.00,21.80,""
+23-Feb-2016,12:11,12:38,"Richmond to South Kensington",2.80,,1.80,""
+22-Feb-2016,20:28,21:04,"South Kensington to Richmond",2.80,,4.60,""
+22-Feb-2016,08:36,09:16,"Richmond to South Kensington",3.90,,7.40,""

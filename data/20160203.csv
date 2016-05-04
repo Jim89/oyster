@@ -1,0 +1,13 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+30-Jan-2016,21:26,22:59,"New Beckenham [National Rail] to Richmond",4.30,,19.20,""
+30-Jan-2016,21:25,,"Topped up,  ",,20.00,23.50,""
+30-Jan-2016,11:39,13:11,"Richmond to New Beckenham [National Rail]",4.30,,3.50,""
+29-Jan-2016,13:44,14:22,"Green Park to Richmond",2.80,,7.80,""
+29-Jan-2016,13:11,13:21,"South Kensington to Green Park",2.40,,10.60,""
+29-Jan-2016,07:28,08:10,"Richmond to South Kensington",3.90,,13.00,""
+27-Jan-2016,13:28,14:03,"South Kensington to Richmond",2.80,,16.90,""
+27-Jan-2016,09:28,,"Topped up, South Kensington",,20.00,19.70,""
+27-Jan-2016,08:51,09:28,"Richmond to South Kensington",3.90,,-0.30,""
+26-Jan-2016,20:14,20:43,"South Kensington to Richmond",2.80,,3.60,""
+26-Jan-2016,11:29,11:58,"Richmond to South Kensington",2.80,,6.40,""

@@ -1,0 +1,12 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+25-Mar-2016,09:40,,"Bus journey, route 205",1.50,,1.70,""
+24-Mar-2016,22:07,22:25,"Barbican to Aldgate",2.40,,3.20,""
+24-Mar-2016,20:36,21:32,"Richmond to Old Street",4.30,,5.60,""
+23-Mar-2016,11:22,12:02,"South Kensington to Richmond",2.80,,9.90,""
+23-Mar-2016,08:10,08:57,"Richmond to South Kensington",3.90,,12.70,""
+22-Mar-2016,20:17,20:52,"South Kensington to Richmond",2.80,,16.60,""
+22-Mar-2016,10:09,,"Topped up, South Kensington",,20.00,19.40,""
+22-Mar-2016,09:38,10:08,"Richmond to South Kensington",2.80,,-0.60,""
+21-Mar-2016,16:52,17:23,"South Kensington to Richmond",3.90,,2.20,""
+21-Mar-2016,08:53,09:25,"Richmond to South Kensington",3.90,,6.10,""

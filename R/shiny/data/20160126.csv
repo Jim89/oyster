@@ -1,0 +1,12 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+24-Jan-2016,10:33,11:32,"Whitechapel to Richmond",2.80,,9.20,""
+23-Jan-2016,22:06,22:28,"Oxford Circus to Whitechapel",2.40,,12.00,""
+23-Jan-2016,13:33,13:51,"Whitechapel to Euston Square",2.40,,14.40,""
+22-Jan-2016,16:36,17:15,"Richmond to Bank",4.30,,16.80,""
+22-Jan-2016,16:36,,"Topped up,  ",,20.00,21.10,""
+22-Jan-2016,09:19,09:56,"Richmond to South Kensington",3.90,,1.10,""
+20-Jan-2016,13:43,14:14,"South Kensington to Richmond",2.80,,5.00,""
+20-Jan-2016,09:49,10:17,"Richmond to South Kensington",2.80,,7.80,""
+19-Jan-2016,20:09,20:37,"South Kensington to Richmond",2.80,,10.60,""
+19-Jan-2016,11:27,12:03,"Richmond to South Kensington",2.80,,13.40,""

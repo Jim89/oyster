@@ -1,0 +1,11 @@
+
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+06-Mar-2016,16:49,17:50,"Richmond to Whitechapel",2.80,,7.90,""
+03-Mar-2016,19:25,20:11,"South Kensington to Richmond",2.80,,10.70,""
+03-Mar-2016,08:03,08:32,"Whitechapel to South Kensington",2.90,,13.50,""
+02-Mar-2016,17:51,18:57,"Richmond to Whitechapel",3.90,,16.40,""
+01-Mar-2016,20:13,,"Topped up,  ",,20.00,20.30,""
+01-Mar-2016,19:43,20:12,"South Kensington to Richmond",2.80,,0.30,""
+01-Mar-2016,11:14,11:40,"Richmond to South Kensington",2.80,,3.10,""
+29-Feb-2016,16:48,17:27,"South Kensington to Richmond",3.90,,5.90,""
+29-Feb-2016,13:00,13:28,"Richmond to South Kensington",2.80,,9.80,""
